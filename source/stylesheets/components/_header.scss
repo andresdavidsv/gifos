@@ -52,6 +52,9 @@
             text-align: center;
             padding: 25px 0px;
         }
+        .crearGifo{
+            display: none;
+        }
     }    
      .menuDesplegable:checked {  
           &~.menuLabel{ 
@@ -69,3 +72,42 @@
 
 }
 //Fin Header
+@media(min-width:1440px){
+    .headerHome{
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 156px;
+        .logoGifos{
+            .l-gifos{
+             width: 59.1px;
+             height: 59.1px;
+            }
+         }
+        .menu{
+           .menuLabel{
+               display: none;
+           }
+        }
+        .items{
+             display: flex;
+             justify-content: flex-end;
+             height: 90px;
+             right: 0;
+             top: 0;
+             background: transparent;
+             padding: 0px 156px;
+            .links{
+                display: flex;
+                font-size: 13px;
+                color: #572EE5;
+                padding: 0px 50px;
+            }
+            .crearGifo{
+                margin-top: -20px;
+                display: flex;
+                width: 54px;
+                height: 54px;
+            }
+        }    
+    }
+}

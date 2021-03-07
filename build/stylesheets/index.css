@@ -57,6 +57,9 @@
   text-align: center;
   padding: 25px 0px;
 }
+.headerHome .items .crearGifo {
+  display: none;
+}
 .headerHome .menuDesplegable:checked ~ .menuLabel .menuHamburguesa {
   display: none;
 }
@@ -65,6 +68,42 @@
 }
 .headerHome .menuDesplegable:checked ~ .items {
   display: block;
+}
+
+@media (min-width: 1440px) {
+  .headerHome {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 156px;
+  }
+  .headerHome .logoGifos .l-gifos {
+    width: 59.1px;
+    height: 59.1px;
+  }
+  .headerHome .menu .menuLabel {
+    display: none;
+  }
+  .headerHome .items {
+    display: flex;
+    justify-content: flex-end;
+    height: 90px;
+    right: 0;
+    top: 0;
+    background: transparent;
+    padding: 0px 156px;
+  }
+  .headerHome .items .links {
+    display: flex;
+    font-size: 13px;
+    color: #572EE5;
+    padding: 0px 50px;
+  }
+  .headerHome .items .crearGifo {
+    margin-top: -20px;
+    display: flex;
+    width: 54px;
+    height: 54px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
