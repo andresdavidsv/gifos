@@ -26,16 +26,26 @@
         justify-content: center;
         margin-top: -5px;
         margin-bottom: 31px;
-        .barraBuscar{
-            background: #FFFFFF;
-            border: 1px solid #572EE5;
-            border-radius: 27px;
-            width: 334px;
-            height: 50px;
-            //font-family: Roboto-Regular;
-            font-size: 16px;
-            color: #000000;
-            text-align: left;
+        .contenedorInputBu{
+            .barraBuscar{
+                background: #FFFFFF;
+                border: 1px solid #572EE5;
+                border-radius: 27px;
+                width: 334px;
+                height: 50px;
+                //font-family: Roboto-Regular;
+                font-size: 16px;
+                color: #000000;
+                text-align: left;
+                padding-left: 40px;
+                position: relative;
+                
+            }
+        }
+        .contenedorSuBu{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 280px;
             .buscarLupa{
                 .imgLupa{
                     width: 20px;
@@ -43,6 +53,7 @@
                 }
             }
         }
+        
     }
     .pieBuscador{
         line-height: 25px;
