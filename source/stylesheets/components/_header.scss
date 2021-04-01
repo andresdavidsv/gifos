@@ -2,6 +2,8 @@
 .headerHome{
     display: flex;
     justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
     padding: 34px 22px;
     .logoGifos{
         .l-gifos{
@@ -9,6 +11,10 @@
          height: 48.8px;
         }
      }
+    .buscadorHeader{
+        display: none;
+    }
+     
     .menu{
          .itemsDesplegables{
              .menuDesplegable{
@@ -52,10 +58,11 @@
             text-align: center;
             padding: 25px 0px;
         }
-        .crearGifo{
-            display: none;
-        }
-    }    
+    }
+    .contenedorBotonG{
+        display: none;
+    }
+   
      .menuDesplegable:checked {  
           &~.menuLabel{ 
                 .menuHamburguesa{
@@ -66,7 +73,7 @@
                 }   
           }  
           &~.items{
-              display: block;
+              display: block;  
           }
     } 
 
@@ -74,6 +81,7 @@
 //Fin Header
 @media(min-width:1440px){
     .headerHome{
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding: 23px 156px;
@@ -83,6 +91,7 @@
              height: 59.1px;
             }
          }
+         
         .menu{
            .menuLabel{
                display: none;
@@ -96,18 +105,82 @@
              top: 0;
              background: transparent;
              padding: 0px 156px;
+             margin-right: 50px;
             .links{
                 display: flex;
                 font-size: 13px;
                 color: #572EE5;
                 padding: 0px 50px;
             }
-            .crearGifo{
-                margin-top: -20px;
-                display: flex;
-                width: 54px;
-                height: 54px;
+        }
+        .contenedorBotonG{
+            display: flex;
+            .menuCrearGifos{
+                opacity: 0;
+                position: absolute;
+                visibility: hidden;
+                .menuLabelG{
+                    display: flex;
+                    .crearGifo{
+                        display: flex;
+                        margin-top: -20px;
+                        width: 54px;
+                        height: 54px;
+                    }
+                }
             }
-        }    
+            
+            .buscadorHeader{
+                position: absolute;
+                display: none;
+                margin-left: -65%;
+                margin-right: 300px;
+                .buscador{
+                    padding: 0px 20px;
+                    margin-top: -5px;
+                    margin-bottom: 31px;
+                    .contenedorInputBu{
+                        .barraBuscar{
+                            background: #FFFFFF;
+                            border: 1px solid #572EE5;
+                            border-radius: 27px;
+                            width: 334px;
+                            height: 50px;
+                            //font-family: Roboto-Regular;
+                            font-size: 16px;
+                            color: #000000;
+                            text-align: left;
+                            padding-left: 40px;
+                            position: relative;
+                            
+                        }
+                    }
+                    .contenedorSuBu{
+                        position: absolute;
+                        margin-top: -35px;
+                        margin-left: 300px;
+                        .buscarLupa{
+                            .imgLupa{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                    
+                }
+             }
+            
+             .menuCrearGifos:checked {  
+                &~.menuLabelG{ 
+                      .crearGifo{
+                          display: none;
+                      } 
+                      .buscadorHeader{
+                          display: block;
+                      } 
+                }     
+            }  
+        }
+              
     }
 }

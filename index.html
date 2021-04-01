@@ -20,15 +20,28 @@
               <img src="./assets/burger.svg" alt="logo-mobile" class="menuHamburguesa" >
               <img src="./assets/close.svg" alt="close" class="cerrar">
             </label>
-            <div class="buscadorHeader"> 
-
-            </div>
             <div class="items">
               <a href="#" class="links"> Modo Nocturno </a>
               <a href="#" class="links"> Favoritos </a>
-              <a href="#" class="links"> Mis GIFOS </a>
-              <img src="./assets/button-crear-gifo.svg" alt="button-crear-gifo" class="crearGifo">
+              <a href="#" class="links"> Mis GIFOS </a> 
             </div>
+            <div class="contenedorBotonG">
+              <input type="checkbox" class="menuCrearGifos" id="menuG" />
+              <label for="menuG" class="menuLabelG">
+                <img src="./assets/button-crear-gifo.svg" alt="button-crear-gifo" class="crearGifo">
+                <div class="buscadorHeader">
+                  <form action="search.php" method="get" class="buscador">
+                    <div class="contenedorInputBu">
+                      <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
+                    </div>
+                    <div class="contenedorSuBu">
+                      <button type="submit" class="buscarLupa">
+                        <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </label>
           </div>
         </nav>
       </header>
