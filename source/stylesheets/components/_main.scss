@@ -20,7 +20,7 @@
             margin: auto;
         }
     }
-    .buscador{
+    .buscadorMain{
         padding: 0px 20px;
         display: flex;
         justify-content: center;
@@ -90,11 +90,17 @@
             height: 190px;
         }
     }
-    .buscador{
+    .buscadorMain{
         padding: 0px 20px;
         margin-bottom: 73px;
-        .barraBuscar{
-            width: 551px;
+        .contenedorInputBu{
+            .barraBuscar{
+                width: 551px;
+                height: 50px;
+            }
+        }
+        .contenedorSuBu{
+            margin-left: 500px;
         }
     }
     .pieBuscador{
