@@ -76,6 +76,9 @@
               display: block;  
           }
     } 
+    //Modo Nocturno Header Movil
+
+    //Fin Modo Nocturno Header Movil
 
 }
 //Fin Header
@@ -107,10 +110,17 @@
              padding: 0px 156px;
              margin-right: 50px;
             .links{
+                //font-family: Montserrat-Bold;
                 display: flex;
                 font-size: 13px;
                 color: #572EE5;
                 padding: 0px 50px;
+            }
+            .links:hover{
+                text-decoration: underline 2px solid #5ED7C6;
+            }
+            .links:active{
+                color: #9CAFC3;
             }
         }
         .contenedorBotonG{
@@ -179,7 +189,8 @@
                           display: block;
                       } 
                 }     
-            }  
+            }
+
         }
               
     }
