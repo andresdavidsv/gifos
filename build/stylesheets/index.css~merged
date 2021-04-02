@@ -11,6 +11,7 @@
   vertical-align: baseline;
 }
 
+<<<<<<< HEAD
 .headerHome {
   display: flex;
   justify-content: space-between;
@@ -258,8 +259,7 @@
   }
   .inspirate .pieBuscador .descripcion {
     font-size: 16px;
-  }
-}
+=======
 .footer {
   padding-top: 47px;
   width: 100%;
@@ -348,6 +348,7 @@
   }
   .footer .footer__container .footer__copyright .footer__text-copyright {
     font-size: 1.3rem;
+>>>>>>> 873efb728b730e8e267f8f62c15ea1a232ebb57f
   }
 }
 
