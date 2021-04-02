@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-@import "./mixins";
-@import "./variables";
-@import "./components/footer";
-=======
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,600;1,400;1,500&display=swap");
 
-@import "components/variables";
-@import "components/reset";
-@import "components/header";
-@import "components/main";
-@import "components/footer";
->>>>>>> 03bd3ad1e6005d1bcd5233ed499ebb8709aad8d2
+@import "./mixins";
+@import "./variables";
+@import "./components/reset";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
