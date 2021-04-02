@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -9,8 +8,158 @@
     <link rel="stylesheet" href="./build/stylesheets/index.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <header class="headerHome">
+        <div class="logoGifos">
+          <img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" />
+        </div>
+        <nav class="menu">
+          <div class="itemsDesplegables">
+            <input type="checkbox" class="menuDesplegable" id="menu" />
+            <label for="menu" class="menuLabel">
+              <img src="./assets/burger.svg" alt="logo-mobile" class="menuHamburguesa" >
+              <img src="./assets/close.svg" alt="close" class="cerrar">
+            </label>
+            <div class="items">
+              <a href="#bmn" class="links" id="bmn"> Modo Nocturno </a>
+              <a href="#" class="links"> Favoritos </a>
+              <a href="#" class="links"> Mis GIFOS </a>
+            </div>
+            <div class="contenedorBotonG">
+              <input type="checkbox" class="menuCrearGifos" id="menuG" />
+              <label for="menuG" class="menuLabelG">
+                <img src="./assets/button-crear-gifo.svg" alt="button-crear-gifo" class="crearGifo">
+                <div class="buscadorHeader">
+                  <form action="search.php" method="get" class="buscador">
+                    <div class="contenedorInputBu">
+                      <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
+                    </div>
+                    <div class="contenedorSuBu">
+                      <button type="submit" class="buscarLupa">
+                        <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </label>
+          </div>
+        </nav>
+      </header>
+    </header>
+    <main class="inspirate">
+      <h1 class="titulo">
+        Inspírate, busca, guarda, y crea los mejores <span class="purpura">GIFOS</span>
+      </h1>
+      <section class="contenedorImg">
+        <img src="./assets/ilustra_header.svg" alt="ilustra_header" class="imgAmigos">
+      </section>
+
+      <form action="search.php" method="get" class="buscadorMain">
+        <div class="contenedorInputBu">
+          <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
+        </div>
+        <div class="contenedorSuBu">
+          <button type="submit" class="buscarLupa">
+            <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
+          </button>
+        </div>
+      </form>
+
+      <section class="pieBuscador">
+        <h2 class="titulo">
+          Trending:
+        </h2>
+        <p class="descripcion">
+          Reactions, Entertainment, Sports, Stickers, Artists
+        </p>
+      </section>
+
+      <section class="slider">
+        <h2 class="slider__h2">Trending GIFOS</h2>
+        <p class="slider__p">Mira los últimos GIFOS de nuestra comunidad.</p>
+        <div class="slider__container">
+          <div class="slider__arrow">
+            <span class="arrow-left"></span>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__img"
+              src="https://bit.ly/2PkhTNg"
+              alt="Imagen de prueba"
+            />
+            <div class="slider__hover"></div>
+            <div class="slider__icons">
+              <div class="slider__icon-container">
+                <span class="slider__icon--first"></span>
+              </div>
+              <div class="slider__icon-container">
+                <span class="slider__icon--second"></span>
+              </div>
+              <div class="slider__icon-container">
+                <span class="slider__icon--last"></span>
+              </div>
+            </div>
+            <div class="slider__text">
+              <p class="slider__p">User</p>
+              <p class="slider__title">Título GIFO</p>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__img"
+              src="https://bit.ly/2PkhTNg"
+              alt="Imagen de prueba"
+            />
+            <div class="slider__hover"></div>
+            <div class="slider__icons">
+              <div class="slider__icon-container">
+                <span class="slider__icon--first"></span>
+              </div>
+              <div class="slider__icon-container">
+                <span class="slider__icon--second"></span>
+              </div>
+              <div class="slider__icon-container">
+                <span class="slider__icon--last"></span>
+              </div>
+            </div>
+            <div class="slider__text">
+              <p class="slider__p">User</p>
+              <p class="slider__title">Título GIFO</p>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__img"
+              src="https://bit.ly/2PkhTNg"
+              alt="Imagen de prueba"
+            />
+            <div class="slider__hover"></div>
+            <div class="slider__icons">
+              <div class="slider__icon-container">
+                <span class="slider__icon--first"></span>
+              </div>
+              <div class="slider__icon-container">
+                <span class="slider__icon--second"></span>
+              </div>
+              <div class="slider__icon-container">
+                <span class="slider__icon--last"></span>
+              </div>
+            </div>
+            <div class="slider__text">
+              <p class="slider__p">User</p>
+              <p class="slider__title">Título GIFO</p>
+            </div>
+          </div>
+
+          <div class="slider__arrow">
+            <span class="arrow-right"></span>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__social-media">
@@ -40,25 +189,3 @@
     ></script>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gifos</title>
-    <link rel="stylesheet" href="./build/stylesheets/index.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script
-      rel="stylesheet"
-      type="text/javascript"
-      href="./build/scripts/index.js"
-    ></script>
-  </body>
-</html>
->>>>>>> 03bd3ad1e6005d1bcd5233ed499ebb8709aad8d2
