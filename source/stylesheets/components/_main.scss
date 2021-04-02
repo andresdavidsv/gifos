@@ -1,0 +1,119 @@
+//Inicio Inspirate
+.inspirate{
+    .titulo{
+        //font-family: Montserrat-Bold;
+        font-size: 25px;
+        color: #572EE5;
+        text-align: center;
+        font-weight: bold;
+        padding: 0px 45px;
+        margin-bottom: 31px;
+        .purpura{    
+            color: #50E3C2;      
+        }
+    }
+    .contenedorImg{ 
+        .imgAmigos{
+            width: 273px;
+            height: 130px;
+            display: block;
+            margin: auto;
+        }
+    }
+    .buscadorMain{
+        padding: 0px 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: -5px;
+        margin-bottom: 31px;
+        .contenedorInputBu{
+            .barraBuscar{
+                background: #FFFFFF;
+                border: 1px solid #572EE5;
+                border-radius: 27px;
+                width: 334px;
+                height: 50px;
+                //font-family: Roboto-Regular;
+                font-size: 16px;
+                color: #000000;
+                text-align: left;
+                padding-left: 50px;
+                position: relative;
+                
+            }
+        }
+        .contenedorSuBu{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 280px;
+            .buscarLupa{
+                .imgLupa{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        
+    }
+    .pieBuscador{
+        line-height: 25px;
+        .titulo{
+            //font-family: Montserrat-Bold;
+            font-size: 16px;
+            color: #572EE5;
+            text-align: center;
+            font-weight: bold;
+        }
+        .descripcion{
+            //font-family: Montserrat-Medium;
+            font-size: 14px;
+            color: #572EE5;
+            text-align: center;
+            padding: 0px 75px;
+            margin-top: -25px;
+        }
+    }
+}
+//Fin Inspirate
+//Modo Nocturno
+
+//Fin Modo Nocturno 
+@media(min-width:1440px){
+.inspirate{
+    .titulo{
+        font-size: 35px;
+        line-height: 50px;
+        padding: 0px 453px;
+        margin-bottom: 24px;
+        margin-top: 56px;
+    }
+    .contenedorImg{ 
+        .imgAmigos{
+            width: 399px;
+            height: 190px;
+        }
+    }
+    .buscadorMain{
+        padding: 0px 20px;
+        margin-bottom: 73px;
+        .contenedorInputBu{
+            .barraBuscar{
+                width: 551px;
+                height: 50px;
+            }
+        }
+        .contenedorSuBu{
+            margin-left: 500px;
+        }
+    }
+    .pieBuscador{
+        .titulo{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .descripcion{
+            font-size: 16px;
+        }
+    }
+}
+}
