@@ -11,6 +11,12 @@
   vertical-align: baseline;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .headerHome {
   display: flex;
   justify-content: space-between;
@@ -338,6 +344,151 @@
     padding: 0px 532.5px;
   }
 }
+.containerSliderCG .sliderCG {
+  position: relative;
+  width: 795px;
+  height: 520px;
+  border-bottom: 6.9px solid #572EE5;
+  margin: 0px 322.1px;
+}
+.containerSliderCG .sliderCG .sliderIni, .containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
+  position: absolute;
+  transition: 0.5s;
+}
+.containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
+  opacity: 0;
+}
+.containerSliderCG .sliderCG .sliderIni .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #572EE5;
+}
+.containerSliderCG .sliderCG .sliderIni .containerCam .tituloIn, .containerSliderCG .sliderCG .sliderIni .containerCam .tituloInColor {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #572EE5;
+  line-height: 35px;
+  margin-top: 134px;
+  padding: 0px 70px;
+}
+.containerSliderCG .sliderCG .sliderIni .containerCam .tituloIn .tituloInColor, .containerSliderCG .sliderCG .sliderIni .containerCam .tituloInColor .tituloInColor {
+  color: #50E3C2;
+  padding: 0;
+}
+.containerSliderCG .sliderCG .sliderIni .containerCam .descripIn {
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  line-height: 29px;
+  padding: 0px 170px;
+}
+.containerSliderCG .sliderCG .sliderAcC .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #572EE5;
+}
+.containerSliderCG .sliderCG .sliderAcC .containerCam .tituloAc {
+  font-size: 25px;
+  font-weight: bold;
+  color: #572EE5;
+  text-align: center;
+  line-height: 35px;
+  padding-left: 170px;
+  margin-top: 134px;
+}
+.containerSliderCG .sliderCG .sliderAcC .containerCam .descripAc {
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 28px;
+  padding-left: 170px;
+}
+.containerSliderCG .sliderCG .sliderGbr .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #572EE5;
+}
+.containerSliderCG .sliderCG .sliderGbr .containerCam .camGr {
+  width: 480px;
+  height: 320px;
+  background: #572EE5;
+  margin: 35px 104px;
+}
+.containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarI, .containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarF, .containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarSG {
+  width: 127px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 16px 24px;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  margin-left: 45%;
+  margin-top: 90px;
+}
+.containerSliderCG .sliderCG .sliderGbr .containerBs .containerBGrabarF, .containerSliderCG .sliderCG .sliderGbr .containerBs .containerBGrabarSG {
+  display: none;
+}
+.containerSliderCG .sliderCG .sliderSGifo .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #572EE5;
+}
+.containerSliderCG .sliderCG .sliderSGifo .containerCam .camGr {
+  width: 480px;
+  height: 320px;
+  background: #572EE5;
+  opacity: 0.6;
+  margin: 35px 104px;
+}
+.containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .loaderText, .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  font-size: 15px;
+  color: #0a0a0a;
+  text-align: center;
+  margin-top: -220px;
+}
+.containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  opacity: 0;
+}
+.containerSliderCG .sliderCG .sliderCG li:target {
+  opacity: 1;
+}
+.containerSliderCG .menuNum {
+  text-align: center;
+  margin-top: -85px;
+}
+.containerSliderCG .menuNum .transSlider {
+  display: inline-block;
+  text-align: center;
+}
+.containerSliderCG .menuNum .transSlider .number {
+  display: inline-block;
+  font-size: 18px;
+  color: #572EE5;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #572EE5;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  margin: 25px;
+}
+.containerSliderCG .menuNum .transSlider .number:checked {
+  background: #572EE5;
+  color: #FFFFFF;
+}
+
 .footer {
   padding-top: 47px;
   width: 100%;
