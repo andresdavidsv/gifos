@@ -100,6 +100,7 @@
     margin-right: 50px;
   }
   .headerHome .items .links {
+    text-transform: uppercase;
     display: flex;
     font-size: 13px;
     color: #572EE5;
@@ -119,27 +120,40 @@
     position: absolute;
     visibility: hidden;
   }
-  .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG {
+  .headerHome .contenedorBotonG .menuLabelG {
     display: flex;
   }
-  .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG .crearGifo {
+  .headerHome .contenedorBotonG .menuLabelG .contentCrearImgs {
     display: flex;
-    margin-top: -20px;
+  }
+  .headerHome .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoD, .headerHome .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoHD, .headerHome .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoAD {
+    position: absolute;
+    display: flex;
+    margin-top: -5px;
     width: 54px;
     height: 54px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader {
+  .headerHome .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoD:active {
+    display: none;
+  }
+  .headerHome .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoD:hover {
+    display: none;
+  }
+  .headerHome .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoAD:hover {
+    display: none;
+  }
+  .headerHome .contenedorBotonG .menuLabelG .buscadorHeader {
     position: absolute;
     display: none;
     margin-left: -65%;
     margin-right: 300px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador {
+  .headerHome .contenedorBotonG .menuLabelG .buscadorHeader .buscador {
     padding: 0px 20px;
     margin-top: -5px;
     margin-bottom: 31px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorInputBu .barraBuscar {
+  .headerHome .contenedorBotonG .menuLabelG .buscadorHeader .buscador .contenedorInputBu .barraBuscar {
     background: #FFFFFF;
     border: 1px solid #572EE5;
     border-radius: 27px;
@@ -151,19 +165,19 @@
     padding-left: 40px;
     position: relative;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorSuBu {
+  .headerHome .contenedorBotonG .menuLabelG .buscadorHeader .buscador .contenedorSuBu {
     position: absolute;
     margin-top: -35px;
     margin-left: 300px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorSuBu .buscarLupa .imgLupa {
+  .headerHome .contenedorBotonG .menuLabelG .buscadorHeader .buscador .contenedorSuBu .buscarLupa .imgLupa {
     width: 20px;
     height: 20px;
   }
-  .headerHome .contenedorBotonG .menuCrearGifos:checked ~ .menuLabelG .crearGifo {
+  .headerHome .menuCrearGifos:hover ~ .menuLabelG .crearGifoD {
     display: none;
   }
-  .headerHome .contenedorBotonG .menuCrearGifos:checked ~ .menuLabelG .buscadorHeader {
+  .headerHome .menuCrearGifos:hover ~ .menuLabelG .buscadorHeader {
     display: block;
   }
 }
@@ -228,6 +242,58 @@
   padding: 0px 75px;
   margin-top: -25px;
 }
+.inspirate .bFavorit {
+  display: none;
+}
+.inspirate .bFavorit .headerFav {
+  text-align: center;
+  margin-top: 11px;
+}
+.inspirate .bFavorit .headerFav .tituloFav {
+  font-size: 20px;
+  color: #572EE5;
+  line-height: 30px;
+  font-weight: bold;
+}
+.inspirate .bFavorit .SinContentFav {
+  text-align: center;
+  margin-top: 109.3px;
+}
+.inspirate .bFavorit .SinContentFav .descriptFav {
+  margin-top: 23.7px;
+  margin-bottom: 190px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #50E3C2;
+  line-height: 33px;
+  padding: 22px;
+}
+.inspirate .bMisGifos {
+  display: none;
+}
+.inspirate .bMisGifos .headerMisG {
+  text-align: center;
+  margin-top: 11px;
+}
+.inspirate .bMisGifos .headerMisG .tituloMisG {
+  font-size: 20px;
+  color: #572EE5;
+  line-height: 30px;
+  font-weight: bold;
+}
+.inspirate .bMisGifos .SinContentMG {
+  text-align: center;
+  margin-top: 109.3px;
+}
+.inspirate .bMisGifos .SinContentMG .descriptMisG {
+  margin-top: 23.7px;
+  margin-bottom: 190px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #50E3C2;
+  line-height: 33px;
+  padding: 22px;
+}
 
 @media (min-width: 1440px) {
   .inspirate .titulo {
@@ -258,6 +324,18 @@
   }
   .inspirate .pieBuscador .descripcion {
     font-size: 16px;
+  }
+  .inspirate .bFavorit .headerFav .tituloFav {
+    font-size: 25px;
+  }
+  .inspirate .bFavorit .SinContentFav .descriptFav {
+    padding: 0px 504.5px;
+  }
+  .inspirate .bMisGifos .headerMisG .tituloMisG {
+    font-size: 25px;
+  }
+  .inspirate .bMisGifos .SinContentMG .descriptMisG {
+    padding: 0px 532.5px;
   }
 }
 .footer {
