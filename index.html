@@ -22,30 +22,35 @@
             </label>
             <div class="items">
               <a href="#bmn" class="links" id="bmn"> Modo Nocturno </a>
-              <a href="#" class="links"> Favoritos </a>
-              <a href="#" class="links"> Mis GIFOS </a>
+              <a href="#ActFav" class="links"> Favoritos </a>
+              <a href="#ActMisGifos" class="links"> Mis GIFOS </a>
             </div>
-            <div class="contenedorBotonG">
-              <input type="checkbox" class="menuCrearGifos" id="menuG" />
-              <label for="menuG" class="menuLabelG">
-                <img src="./assets/button-crear-gifo.svg" alt="button-crear-gifo" class="crearGifo">
-                <div class="buscadorHeader">
-                  <form action="search.php" method="get" class="buscador">
-                    <div class="contenedorInputBu">
-                      <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
-                    </div>
-                    <div class="contenedorSuBu">
-                      <button type="submit" class="buscarLupa">
-                        <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </label>
-          </div>
         </nav>
+        <div class="contenedorBotonG">
+          <input type="checkbox" class="menuCrearGifos" id="menuG" />
+          <label for="menuG" class="menuLabelG">
+            <div class="contentCrearImgs">
+              <img src="./assets/CTA-crear-gifo-hover.svg" alt="button-crear-gifo" class="crearGifoHD">
+              <img src="./assets/CTA-crear-gifo-active.svg" alt="button-crear-gifo" class="crearGifoAD">
+              <img src="./assets/button-crear-gifo.svg" alt="button-crear-gifo" class="crearGifoD">
+            </div>
+            <div class="buscadorHeader">
+              <form action="search.php" method="get" class="buscador">
+                <div class="contenedorInputBu">
+                  <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
+                </div>            
+                <div class="contenedorSuBu">
+                  <button type="submit" class="buscarLupa">
+                    <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
+                  </button>
+                </div>
+              </form>
+            </div>
+          </label>
+        </div>
       </header>
     </header>
+
     <main class="inspirate">
       <h1 class="titulo">
         Inspírate, busca, guarda, y crea los mejores <span class="purpura">GIFOS</span>
@@ -73,6 +78,107 @@
           Reactions, Entertainment, Sports, Stickers, Artists
         </p>
       </section>
+
+      <section class="bFavorit" id="ActFav">
+        <div class="headerFav">
+          <img src="./assets/icon-favoritos.svg" alt="icon-fav" class="imgIconFav">
+          <h2 class="tituloFav">Favoritos</h2>
+        </div>
+        <div class="SinContentFav">
+          <img src="./assets/icon-fav-sin-contenido.svg" alt="icon-fav-sin-contenido">
+          <h2 class="descriptFav">"¡Guarda tu primer GIFO en Favoritos 
+            para que se muestre aquí!"</h2>
+        </div>
+      </section>
+
+      <section class="bMisGifos" id="ActMisGifos">
+        <div class="headerMisG">
+          <img src="./assets/icon-mis-gifos.svg" alt="icon-mis-gifos" class="imgIconMisG">
+          <h2 class="tituloMisG">Mis GIFOS</h2>
+        </div>
+        <div class="SinContentMG">
+          <img src="./assets/icon-mis-gifos-sin-contenido.svg" alt="icon-mis-gifos-sin-contenido">
+          <h2 class="descriptMisG">"¡Anímate a crear tu primer GIFO!"</h2>
+        </div>
+      </section>
+
+      <section class="containerSliderCG">
+        <ul class="sliderCG">
+          <li id="sliderIn" class="sliderIni">
+            <div class="containerCam">
+              <h2 class="tituloIn">
+                Aquí podrás  <br> crear tus propios <span class="tituloInColor">GIFOS</span>
+              </h2>
+              <h3 class="descripIn">
+                ¡Crea tu GIFO en sólo 3 pasos!  <br>  (sólo necesitas una cámara para grabar un video)
+              </h3>
+            </div>
+          </li>
+          <li id="sliderAc" class="sliderAcC">
+            <div class="containerCam">
+              <h2 class="tituloAc">
+                ¿Nos das acceso <br>a tu cámara?
+              </h2>
+              <h3 class="descripAc">
+                El acceso a tu camara será válido sólo <br>
+                por el tiempo en el que estés creando el GIFO.
+              </h3>
+            </div>
+          </li>
+          <li id="sliderGb" class="sliderGbr">
+            <div class="containerCam">
+              <div class="camGr">
+              </div>
+            </div>
+            <div class="containerBs"> 
+              <div class="containerBGrabarI">
+                <button class="BGrabarI">GRABAR</button>
+              </div>
+              <div class="containerBGrabarF">
+                <button class="BGrabarF">FINALIZAR</button>
+              </div>
+              <div class="containerBGrabarSG">
+                <button class="BGrabarSG">SUBIR GIFO</button>
+              </div>
+            </div>
+          </li>
+          <li id="sliderSG " class="sliderSGifo">
+            <div class="containerCam">
+              <div class="camGr">
+              </div>
+              <div class="containerTextDescrip">
+                <div class="loaderText">
+                  <img src="./assets/loader.svg" alt="loader">
+                  <h3 class="descripSGifo">
+                    Estamos subiendo tu GIFO
+                  </h3>
+                </div>
+                <div class="checkText">
+                  <img src="./assets/check.svg" alt="check">
+                  <h3 class="descripSEGifo">
+                    GIFO subido con éxito
+                  </h3>
+                </div>
+              </div>
+              
+            </div>
+          </li>
+        </ul>
+
+        <ul class="menuNum">
+          <li >
+            <a href="#sliderAc">1</a>
+          </li>
+          <li >
+            <a href="#sliderGb">2</a>
+          </li>
+          <li >
+            <a href="#sliderSG">3</a>
+          </li>
+        </ul>
+
+      </section>
+
 
       <section class="slider">
         <h2 class="slider__h2">Trending GIFOS</h2>
