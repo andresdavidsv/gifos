@@ -1,4 +1,5 @@
 .containerSliderCG{
+    display: none;
     .sliderCG{
         position: relative;
         width: 795px;
@@ -7,10 +8,8 @@
         margin: 0px 322.1px;
         .sliderIni, .sliderAcC, .sliderGbr, .sliderSGifo{
             position: absolute;
-            transition: 0.5s;
-        }
-        .sliderAcC, .sliderGbr, .sliderSGifo{
             opacity: 0;
+            transition: opacity .5s;
         }
         .sliderIni{
             .containerCam{
@@ -57,7 +56,7 @@
                     color: #572EE5;
                     text-align: center;
                     line-height: 35px;
-                    padding-left: 170px;
+                    //padding-left: 170px;
                     margin-top: 134px;
                 }
                 .descripAc{
@@ -66,7 +65,7 @@
                     color: #000000;
                     text-align: center;
                     line-height: 28px;
-                    padding-left: 170px;
+                   // padding-left: 170px;
                 }
             }
         }
@@ -135,35 +134,42 @@
                     
             }
         }
-    .sliderCG li:target{
-        opacity: 1;
-    } 
     }
-
-
+    ul.sliderCG li:first-child{
+        opacity: 1;
+    }
+    ul.sliderCG li:target{
+        opacity: 1;
+        z-index: auto;
+    }
     .menuNum{
+        position: relative;
+        z-index: auto;
         text-align: center;
         margin-top: -85px;
-        .transSlider{
-            display: inline-block;
-            text-align: center;
-            .number{
-                display: inline-block;
-                //font-family: Roboto-Medium;
-                font-size: 18px;
-                color: #572EE5;
-                text-decoration: none;
-                background: white;
-                border: 1px solid #572EE5;
-                border-radius: 100%;
-                width: 32px;
-                height: 32px;
-                margin: 25px;
-            }
-            .number:checked{
-                background: #572EE5;
-                color: #FFFFFF;
-            }
-        }
     }
+    .menuNum li{
+        display: inline-block;
+        text-align: center;
+    }
+    .menuNum li a{
+        display: inline-block;
+        padding-top: 3px;
+        //font-family: Roboto-Medium;
+        font-size: 18px;
+        color: #572EE5;
+        text-decoration: none;
+        background: white;
+        border: 1px solid #572EE5;
+        border-radius: 100%;
+        width: 32px;
+        height: 32px;
+        margin: 25px;
+    }
+    .menuNum li a:active{
+        background: #572EE5;
+        color: #FFFFFF;
+    }
+        
+    
 }

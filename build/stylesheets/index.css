@@ -344,6 +344,9 @@ ul, li {
     padding: 0px 532.5px;
   }
 }
+.containerSliderCG {
+  display: none;
+}
 .containerSliderCG .sliderCG {
   position: relative;
   width: 795px;
@@ -353,10 +356,8 @@ ul, li {
 }
 .containerSliderCG .sliderCG .sliderIni, .containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
   position: absolute;
-  transition: 0.5s;
-}
-.containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
   opacity: 0;
+  transition: opacity 0.5s;
 }
 .containerSliderCG .sliderCG .sliderIni .containerCam {
   margin-left: 50px;
@@ -398,7 +399,6 @@ ul, li {
   color: #572EE5;
   text-align: center;
   line-height: 35px;
-  padding-left: 170px;
   margin-top: 134px;
 }
 .containerSliderCG .sliderCG .sliderAcC .containerCam .descripAc {
@@ -406,7 +406,6 @@ ul, li {
   color: #000000;
   text-align: center;
   line-height: 28px;
-  padding-left: 170px;
 }
 .containerSliderCG .sliderCG .sliderGbr .containerCam {
   margin-left: 50px;
@@ -461,19 +460,26 @@ ul, li {
 .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
   opacity: 0;
 }
-.containerSliderCG .sliderCG .sliderCG li:target {
+.containerSliderCG ul.sliderCG li:first-child {
   opacity: 1;
 }
+.containerSliderCG ul.sliderCG li:target {
+  opacity: 1;
+  z-index: auto;
+}
 .containerSliderCG .menuNum {
+  position: relative;
+  z-index: auto;
   text-align: center;
   margin-top: -85px;
 }
-.containerSliderCG .menuNum .transSlider {
+.containerSliderCG .menuNum li {
   display: inline-block;
   text-align: center;
 }
-.containerSliderCG .menuNum .transSlider .number {
+.containerSliderCG .menuNum li a {
   display: inline-block;
+  padding-top: 3px;
   font-size: 18px;
   color: #572EE5;
   text-decoration: none;
@@ -484,7 +490,7 @@ ul, li {
   height: 32px;
   margin: 25px;
 }
-.containerSliderCG .menuNum .transSlider .number:checked {
+.containerSliderCG .menuNum li a:active {
   background: #572EE5;
   color: #FFFFFF;
 }
