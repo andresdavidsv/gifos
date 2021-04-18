@@ -1,9 +1,7 @@
-
 .slider {
   width: 100%;
-
+  background-color: #f3f5f8;
   position: relative;
-  background: $white;
   .slider__h2 {
     text-align: center;
     margin-top: 45px;
@@ -11,8 +9,11 @@
     color: $purple;
     font-size: 2.5rem;
     line-height: 3rem;
+    font-weight: bold;
+    padding-top: 67px;
   }
   .slider__p {
+    text-align: center;
     max-width: 170px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -70,6 +71,9 @@
         display: flex;
         justify-content: flex-end;
 
+        cursor: pointer;
+        transition: 0.3s;
+
         .slider__icon-container {
           width: 32px;
           height: 32px;
@@ -89,9 +93,9 @@
             opacity: 1;
           }
 
-          &:active{
+          &:active {
             opacity: 1;
-            .slider__icon--first{
+            .slider__icon--first {
               background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart-full.svg");
             }
           }
@@ -131,18 +135,19 @@
         top: 181px;
 
         .slider__p {
+          text-align: center;
           margin-left: 13px;
           margin-bottom: 5px;
 
           color: $white;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 1.5rem;
         }
         .slider__title {
           margin-left: 13px;
 
           color: $white;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 1.6rem;
           font-weight: bold;
         }
@@ -169,11 +174,13 @@
   .slider {
     padding-bottom: 182px;
     .slider__h2 {
+      text-align: center;
       margin-top: 67px;
       margin-bottom: 12px;
       font-size: 2.5rem;
     }
     .slider__p {
+      text-align: center;
       max-width: 400px;
       font-size: 1.8rem;
       line-height: 2.1rem;

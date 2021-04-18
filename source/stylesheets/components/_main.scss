@@ -1,13 +1,15 @@
 //Inicio Inspirate
 .inspirate{
     .titulo{
-        //font-family: Montserrat-Bold;
-        font-size: 25px;
+        text-align: center;
+        font-size: 35px;
         color: #572EE5;
         text-align: center;
         font-weight: bold;
         padding: 0px 45px;
         margin-bottom: 31px;
+        min-width: 320px;
+        line-height: 3.3rem;
         .purpura{    
             color: #50E3C2;      
         }
