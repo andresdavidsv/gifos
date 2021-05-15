@@ -1,216 +1,308 @@
-//Inicio Header 
-.headerHome{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding: 34px 22px;
-    .logoGifos{
-        .l-gifos{
-         width: 48.8px;
-         height: 48.8px;
-        }
-     }
-    .buscadorHeader{
-        display: none;
+//Inicio Header
+.headerHome {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding: 34px 22px;
+  .logoGifos {
+    .l-gifos {
+      width: 48.8px;
+      height: 48.8px;
     }
-     
-    .menu{
-         .itemsDesplegables{
-             .menuDesplegable{
-                 opacity: 0;
-                 position: absolute;
-                 visibility: hidden;
-                }
-              .menuLabel{
-                 .menuHamburguesa{
-                     margin-top: 15px;
-                     width: 15px;
-                     height: 14px;
-                 }
-                 .cerrar{
-                     margin-top: 15px;
-                     width: 14px;
-                     height: 14px;
-                     display: none;
-                 }
-             }
-         }
-    }
-    .items{
-         display: none;
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         right: 0;
-         margin-top: 34px;
-         background: rgba(87,46,229,0.90);
-         padding: 12px 0px;
-         filter: alpha(opacity=50);
-         z-index: 2;
-        .links{
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-            //font-family: Montserrat-Bold;
-            font-size: 15px;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 25px 0px;
-        }
-    }
-    .contenedorBotonG{
-        display: none;
-    }
-    .menuDesplegable:checked {  
-        &~.menuLabel{ 
-            .menuHamburguesa{
-                display: none;
-            }  
-            .cerrar{
-                display: block;
-            }   
-        }  
-        &~.items{
-            display: block;  
-        }
-    } 
-    //Modo Nocturno Header Movil
+  }
+  .buscadorHeader {
+    display: none;
+  }
 
-    //Fin Modo Nocturno Header Movil
+  .menu {
+    .itemsDesplegables {
+      .menuDesplegable {
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+      }
+      .menuLabel {
+        .menuHamburguesa {
+          margin-top: 15px;
+          width: 15px;
+          height: 14px;
+        }
+        .cerrar {
+          margin-top: 15px;
+          width: 14px;
+          height: 14px;
+          display: none;
+        }
+      }
+    }
+  }
+  .items {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    margin-top: 34px;
+    background: rgba(87, 46, 229, 0.9);
+    padding: 12px 0px;
+    filter: alpha(opacity=50);
+    z-index: 2;
+    .links {
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+      //font-family: Montserrat-Bold;
+      font-size: 15px;
+      color: #ffffff;
+      text-align: center;
+      padding: 25px 0px;
+    }
+  }
+  .contenedorBotonG {
+    display: none;
+  }
+  .menuDesplegable:checked {
+    & ~ .menuLabel {
+      .menuHamburguesa {
+        display: none;
+      }
+      .cerrar {
+        display: block;
+      }
+    }
+    & ~ .items {
+      display: block;
+    }
+  }
+  //Modo Nocturno Header Movil
 
+  .menuDesplegable:checked {
+    & ~ .menuLabel {
+      .menuHamburguesa {
+        display: none;
+      }
+      .cerrar {
+        display: block;
+      }
+    }
+    & ~ .items {
+      display: block;
+    }
+  }
+  //Modo Nocturno Header Movil
+
+  //Fin Modo Nocturno Header Movil
 }
 //Fin Header
-@media(min-width:1440px){
-    .headerHome{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        padding: 23px 156px;
-        .logoGifos{
-            .l-gifos{
-             width: 59.1px;
-             height: 59.1px;
-            }
-         }
-         
-        .menu{
-           .menuLabel{
-               display: none;
-           }
-        }
-        .items{
-             display: flex;
-             justify-content: flex-end;
-             height: 90px;
-             right: 0;
-             top: 0;
-             background: transparent;
-             padding: 0px 156px;
-             margin-right: 50px;
-            .links{
-                //font-family: Montserrat-Bold;
-                text-transform: uppercase;
-                display: flex;
-                font-size: 13px;
-                color: #572EE5;
-                padding: 0px 50px;
-            }
-            .links:hover{
-                text-decoration: underline 2px solid #5ED7C6;
-            }
-            .links:active{
-                color: #9CAFC3;
-            }
-        }
-
-
-
-        .contenedorBotonG{
-            display: flex;
-            .menuCrearGifos{
-                opacity: 0;
-                position: absolute;
-                visibility: hidden;
-            }
-            .menuLabelG{
-                 display: flex;
-                .contentCrearImgs{
-                     display: flex;
-                    .crearGifoD,.crearGifoHD,.crearGifoAD{
-                        position: absolute;
-                         display: flex;
-                         margin-top: -5px;
-                         width: 54px;
-                         height: 54px;
-                    }
-                    .crearGifoD:active{
-                        display: none;
-                    }
-                    .crearGifoD:hover{
-                        display: none;
-                    }
-                    .crearGifoAD:hover{
-                        display: none;
-                    }
-                }   
-                .buscadorHeader{
-                    position: absolute;
-                    display: none;
-                    margin-left: -65%;
-                    margin-right: 300px;
-                    .buscador{                    
-                        padding: 0px 20px;
-                        margin-top: -5px;
-                        margin-bottom: 31px;
-                        .contenedorInputBu{
-                            .barraBuscar{
-                                background: #FFFFFF;
-                                border: 1px solid #572EE5;
-                                border-radius: 27px;
-                                width: 334px;
-                                height: 50px;
-                                //font-family: Roboto-Regular;
-                                font-size: 16px;
-                                color: #000000;
-                                text-align: left;
-                                padding-left: 40px;
-                                position: relative;
-                                    
-                            }
-                        }
-                        .contenedorSuBu{
-                            position: absolute;
-                            margin-top: -35px;
-                            margin-left: 300px;
-                            .buscarLupa{
-                                .imgLupa{
-                                    width: 20px;
-                                    height: 20px;
-                                }
-                            }
-                        }
-                            
-                    }
-                }
-            }
-
-        }
-            
-        
-            
-        .menuCrearGifos:hover {  
-            &~.menuLabelG{ 
-                    .crearGifoD{
-                        display: none;
-                    } 
-                    .buscadorHeader{
-                        display: block;
-                    } 
-            }     
-        }
-
+@media (min-width: 1440px) {
+  .headerHome {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 156px;
+    .logoGifos {
+      .l-gifos {
+        width: 59.1px;
+        height: 59.1px;
+      }
     }
-              
-}
 
+    .menu {
+      .menuLabel {
+        display: none;
+      }
+    }
+    .items {
+      display: flex;
+      justify-content: flex-end;
+      height: 90px;
+      right: 0;
+      top: 0;
+      background: transparent;
+      padding: 0px 156px;
+      margin-right: 50px;
+      .links {
+        //font-family: Montserrat-Bold;
+        display: flex;
+        font-size: 13px;
+        color: #572ee5;
+        padding: 0px 50px;
+      }
+      .links:hover {
+        text-decoration: underline 2px solid #5ed7c6;
+      }
+      .links:active {
+        color: #9cafc3;
+      }
+    }
+    .contenedorBotonG {
+      display: flex;
+      .menuCrearGifos {
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        .menuLabelG {
+          display: flex;
+          .crearGifo {
+            display: flex;
+            margin-top: -20px;
+            width: 54px;
+            height: 54px;
+          }
+        }
+      }
+
+      .buscadorHeader {
+        position: absolute;
+        display: none;
+        margin-left: -65%;
+        margin-right: 300px;
+        .buscador {
+          padding: 0px 20px;
+          margin-top: -5px;
+          margin-bottom: 31px;
+          .contenedorInputBu {
+            .barraBuscar {
+              background: #ffffff;
+              border: 1px solid #572ee5;
+              border-radius: 27px;
+              width: 334px;
+              height: 50px;
+              //font-family: Roboto-Regular;
+              font-size: 16px;
+              color: #000000;
+              text-align: left;
+              padding-left: 40px;
+              position: relative;
+              .items {
+                display: flex;
+                justify-content: flex-end;
+                height: 90px;
+                right: 0;
+                top: 0;
+                background: transparent;
+                padding: 0px 156px;
+                margin-right: 50px;
+                .links {
+                  //font-family: Montserrat-Bold;
+                  text-transform: uppercase;
+                  display: flex;
+                  font-size: 13px;
+                  color: #572ee5;
+                  padding: 0px 50px;
+                }
+                .links:hover {
+                  text-decoration: underline 2px solid #5ed7c6;
+                }
+              }
+              .contenedorSuBu {
+                position: absolute;
+                margin-top: -35px;
+                margin-left: 300px;
+                .buscarLupa {
+                  .imgLupa {
+                    width: 20px;
+                    height: 20px;
+                  }
+                }
+              }
+            }
+          }
+
+          .contenedorBotonG {
+            display: flex;
+            .menuCrearGifos {
+              opacity: 0;
+              position: absolute;
+              visibility: hidden;
+            }
+            .menuLabelG {
+              display: flex;
+              .contentCrearImgs {
+                display: flex;
+                .crearGifoD,
+                .crearGifoHD,
+                .crearGifoAD {
+                  position: absolute;
+                  display: flex;
+                  margin-top: -5px;
+                  width: 54px;
+                  height: 54px;
+                }
+                .crearGifoD:active {
+                  display: none;
+                }
+                .crearGifoD:hover {
+                  display: none;
+                }
+                .crearGifoAD:hover {
+                  display: none;
+                }
+              }
+              .buscadorHeader {
+                position: absolute;
+                display: none;
+                margin-left: -65%;
+                margin-right: 300px;
+                .buscador {
+                  padding: 0px 20px;
+                  margin-top: -5px;
+                  margin-bottom: 31px;
+                  .contenedorInputBu {
+                    .barraBuscar {
+                      background: #ffffff;
+                      border: 1px solid #572ee5;
+                      border-radius: 27px;
+                      width: 334px;
+                      height: 50px;
+                      //font-family: Roboto-Regular;
+                      font-size: 16px;
+                      color: #000000;
+                      text-align: left;
+                      padding-left: 40px;
+                      position: relative;
+                    }
+                  }
+                  .contenedorSuBu {
+                    position: absolute;
+                    margin-top: -35px;
+                    margin-left: 300px;
+                    .buscarLupa {
+                      .imgLupa {
+                        width: 20px;
+                        height: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .menuCrearGifos:checked {
+              & ~ .menuLabelG {
+                .crearGifo {
+                  display: none;
+                }
+                .buscadorHeader {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+
+        .menuCrearGifos:hover {
+          & ~ .menuLabelG {
+            .crearGifoD {
+              display: none;
+            }
+            .buscadorHeader {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gifos</title>
     <link rel="stylesheet" href="./build/stylesheets/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
   </head>
   <body>
     <header>
@@ -77,6 +81,19 @@
         <p class="descripcion">
           Reactions, Entertainment, Sports, Stickers, Artists
         </p>
+      </section>
+
+      <section id="search">
+      </section>
+
+      <section class="SearchNotFound">
+        <div class="SearchNotFound__decoration">
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <div class="SearchNotFound__img">
+          <img src="./assets/icon-ouch.svg" alt="Icono busqueda no encontrada">
+        </div>
+        <p>Intenta con otra búsqueda.</p>
       </section>
 
       <section class="bFavorit" id="ActFav">
@@ -184,6 +201,14 @@
         <h2 class="slider__h2">Trending GIFOS</h2>
         <p class="slider__p">Mira los últimos GIFOS de nuestra comunidad.</p>
         <div class="slider__container">
+
+        <img id="myImg" src="https://bit.ly/2PkhTNg" alt="Snow" style="width:100%;max-width:300px">
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
+
           <div class="slider__arrow">
             <span class="arrow-left"></span>
           </div>
@@ -264,6 +289,7 @@
             <span class="arrow-right"></span>
           </div>
         </div>
+
       </section>
     </main>
     <footer class="footer">
@@ -291,7 +317,7 @@
     <script
       rel="stylesheet"
       type="text/javascript"
-      href="./build/scripts/index.js"
+      src="./source/scripts/index.js"
     ></script>
   </body>
 </html>
