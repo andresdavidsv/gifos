@@ -1,0 +1,10 @@
+.container {
+  max-width: 90%;
+  width: $width-container;
+  margin: 20px auto;
+  overflow: hidden;
+  &-wide {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
