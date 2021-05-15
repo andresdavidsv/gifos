@@ -951,7 +951,7 @@ ul, li {
 .footer__social-media .footer__icons a i {
   display: inline-block;
   font-size: 2rem;
-  color: #cdd6e0;
+  color: #CDD6E0;
 }
 .footer__social-media .footer__icons a i:hover {
   color: #572EE5;
@@ -1246,7 +1246,7 @@ ul, li {
   width: 280px;
   height: 0.1px;
   opacity: 0.5;
-  border: 1px solid #9cafc3;
+  border: 1px solid #9CAFC3;
 }
 .SearchNotFound h2 {
   text-align: center;
@@ -1265,7 +1265,7 @@ ul, li {
   width: 120px;
   height: 120px;
   margin: 0 auto;
-  background-color: #cdd6e0;
+  background-color: #CDD6E0;
   opacity: 0.6px;
   border-radius: 80px;
 }
