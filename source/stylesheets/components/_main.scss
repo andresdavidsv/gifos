@@ -1,8 +1,9 @@
 //Inicio Inspirate
 .inspirate{
     .titulo{
+        font-family: $font-family-sans-serif;
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
         color: #572EE5;
         text-align: center;
         font-weight: bold;
@@ -35,7 +36,7 @@
                 border-radius: 27px;
                 width: 334px;
                 height: 50px;
-                //font-family: Roboto-Regular;
+                font-family: $font-family-roboto;
                 font-size: 16px;
                 color: #000000;
                 text-align: left;
@@ -60,14 +61,14 @@
     .pieBuscador{
         line-height: 25px;
         .titulo{
-            //font-family: Montserrat-Bold;
+            font-family: $font-family-sans-serif;
             font-size: 16px;
             color: #572EE5;
             text-align: center;
             font-weight: bold;
         }
         .descripcion{
-            //font-family: Montserrat-Medium;
+            font-family: $font-family-sans-serif;
             font-size: 14px;
             color: #572EE5;
             text-align: center;
@@ -75,16 +76,166 @@
             margin-top: -25px;
         }
     }
+}
+//Fin Inspirate
+
     //_____________________________________________
+.bFavorit{
+    // display: none;
+    .headerFav{
+        text-align: center;
+        margin-top: 11px;
+        .tituloFav{
+            font-family: $font-family-sans-serif;
+            font-size: 20px;
+            color: #572EE5;
+            line-height: 30px;
+            font-weight: bold;
+        }
+    }
+    .SinContentFav{
+        text-align: center;
+        margin-top: 109.3px;
+        .descriptFav{
+            font-family: $font-family-sans-serif;
+            margin-top: 23.7px;
+            margin-bottom: 190px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #50E3C2;
+            line-height: 33px;
+            padding: 22px;
+            //padding: 0px 504.5px;
+        }
+    }
+}
+    //________________________________
+.bMisGifos{
+    // display: none;
+    .headerMisG{
+        text-align: center;
+        margin-top: 11px;
+        .tituloMisG{
+            font-family: $font-family-sans-serif;
+            font-size: 20px;
+            color: #572EE5;
+            line-height: 30px;
+            font-weight: bold;
+        }
+    }
+        
+    .SinContentMG{
+        text-align: center;
+        margin-top: 109.3px;
+        .descriptMisG{
+            font-family: $font-family-sans-serif;
+            margin-top: 23.7px;
+            margin-bottom: 190px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #50E3C2;
+            line-height: 33px;
+            padding: 22px;
+            //padding: 0px 532.5px;
+        }
+    }
+}
+
+
+//Modo Nocturno
+body.modoNocturno{
+    background-color: #37383C;
+    .inspirate{
+        .titulo{
+            font-family: $font-family-sans-serif;
+            text-align: center;
+            font-size: 25px;
+            color: #FFFFFF;
+            text-align: center;
+            font-weight: bold;
+            padding: 0px 45px;
+            margin-bottom: 31px;
+            min-width: 320px;
+            line-height: 3.3rem;
+            .purpura{    
+                color: #50E3C2;      
+            }
+        }
+        .contenedorImg{ 
+            .imgAmigos{
+                width: 273px;
+                height: 130px;
+                display: block;
+                margin: auto;
+            }
+        }
+        .buscadorMain{
+            padding: 0px 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: -3px;
+            margin-bottom: 31px;
+            .contenedorInputBu{
+                .barraBuscar{
+                    background: transparent;
+                    border: 1px solid #ffffff;
+                    border-radius: 27px;
+                    width: 334px;
+                    height: 50px;
+                    font-family: $font-family-roboto;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    text-align: left;
+                    padding-left: 50px;
+                    position: relative;
+                    
+                }
+            }
+            .contenedorSuBu{
+                position: absolute;
+                margin-top: 15px;
+                margin-left: 280px;
+                .buscarLupa{
+                    background-color: transparent;
+                    .imgLupa{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            
+        }
+        .pieBuscador{
+            line-height: 25px;
+            .titulo{
+                font-family: $font-family-sans-serif;
+                font-size: 16px;
+                color: #ffffff;
+                text-align: center;
+                font-weight: bold;
+            }
+            .descripcion{
+                font-family: $font-family-sans-serif;
+                font-size: 14px;
+                color: #ffffff;
+                text-align: center;
+                padding: 0px 75px;
+                margin-top: -25px;
+            }
+        }
+    }
+    //Fin Inspirate
+    
+        //_____________________________________________
     .bFavorit{
-        display: none;
+        // display: none;
         .headerFav{
             text-align: center;
             margin-top: 11px;
             .tituloFav{
-                //font-family: Montserrat-Bold;
+                font-family: $font-family-sans-serif;
                 font-size: 20px;
-                color: #572EE5;
+                color: #ffffff;
                 line-height: 30px;
                 font-weight: bold;
             }
@@ -93,7 +244,7 @@
             text-align: center;
             margin-top: 109.3px;
             .descriptFav{
-                //font-family: Montserrat-Bold;
+                font-family: $font-family-sans-serif;
                 margin-top: 23.7px;
                 margin-bottom: 190px;
                 font-size: 22px;
@@ -105,25 +256,26 @@
             }
         }
     }
-    //________________________________
+        //________________________________
     .bMisGifos{
-        display: none;
+        // display: none;
         .headerMisG{
             text-align: center;
             margin-top: 11px;
             .tituloMisG{
-                //font-family: Montserrat-Bold;
+                font-family: $font-family-sans-serif;
                 font-size: 20px;
-                color: #572EE5;
+                color: #ffffff;
                 line-height: 30px;
                 font-weight: bold;
             }
         }
+            
         .SinContentMG{
             text-align: center;
             margin-top: 109.3px;
             .descriptMisG{
-                //font-family: Montserrat-Bold;
+                font-family: $font-family-sans-serif;
                 margin-top: 23.7px;
                 margin-bottom: 190px;
                 font-size: 22px;
@@ -135,9 +287,8 @@
             }
         }
     }
+    
 }
-//Fin Inspirate
-//Modo Nocturno
 
 //Fin Modo Nocturno 
 @media(min-width:1440px){
@@ -177,30 +328,30 @@
                 font-size: 16px;
             }
         }
+    }
         //_______________________________________
-        .bFavorit{
-            .headerFav{
-                .tituloFav{
-                    font-size: 25px;
-                }
-            }
-            .SinContentFav{
-                .descriptFav{
-                    padding: 0px 504.5px;
-                }
+    .bFavorit{
+        .headerFav{
+            .tituloFav{
+                font-size: 25px;
             }
         }
-        //__________________________________________
-        .bMisGifos{
-            .headerMisG{
-                .tituloMisG{
-                    font-size: 25px;
-                }
+        .SinContentFav{
+            .descriptFav{
+                padding: 0px 504.5px;
             }
-            .SinContentMG{
-                .descriptMisG{
-                    padding: 0px 532.5px;
-                }
+        }
+    }
+        //__________________________________________
+    .bMisGifos{
+        .headerMisG{
+            .tituloMisG{
+                font-size: 25px;
+            }
+        }
+        .SinContentMG{
+            .descriptMisG{
+                padding: 0px 532.5px;
             }
         }
     }
