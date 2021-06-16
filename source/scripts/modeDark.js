@@ -10,17 +10,17 @@ BModoNocturno.addEventListener('click',()=>{
         localStorage.setItem("modeDark", "true");
     
         BModoNocturno.textContent = "Modo Diurno";
-        logo.src="./assets/logo-dark-mode.svg";
-        camara.src = "./assets/illustration-camera-dark.svg";
-        cinta.src = "./assets/Illustration-movie-dark.svg";
+        logo.src="https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/logo-dark-mode.svg";
+        camara.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/illustration-camera-dark.svg";
+        cinta.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/Illustration-movie-dark.svg";
     
       } else {
         localStorage.setItem("modeDark", "false");
     
         BModoNocturno.textContent = "Modo Nocturno";
-        logo.src = "./assets/logo.svg";
-        camara.src = "./assets/illustration-camera.svg";
-        cinta.src = "./assets/illustration-movie.svg";
+        logo.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/logo.svg";
+        camara.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/illustration-camera.svg";
+        cinta.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/illustration-movie.svg";
     
       }
     });
@@ -29,9 +29,9 @@ if (localStorage.getItem("modeDark") === "true") {
   document.body.classList.add("modoNocturno");
 
   BModoNocturno.innerHTML = "Modo Diurno";
-  logo.src = "./assets/logo-dark-mode.svg";
-  camara.src = "./assets/illustration-camera-dark.svg";
-  cinta.src = "./assets/Illustration-movie-dark.svg";
+  logo.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/logo-dark-mode.svg";
+  camara.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/illustration-camera-dark.svg";
+  cinta.src = "https://raw.githubusercontent.com/llandkoer/proyectoGifOS/3f5c9538f2f319958c4345a01c7d5ab1ad4638ae/src/assets/Illustration-movie-dark.svg";
 
 } else {
   document.body.classList.remove("modoNocturno");
