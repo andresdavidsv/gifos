@@ -69,6 +69,55 @@
     color: $blue;
   }
 }
+//Modo Nocturno
+body.modoNocturno{
+  background-color: #37383C;
+  //Not Found
+  .SearchNotFound {
+    max-width: 100%;
+    overflow-x: hidden;
+    .SearchNotFound__decoration {
+      margin: 0 auto;
+      margin-top: 75px;
+      max-width: 100%;
+      width: 280px;
+      height: 0.1px;
+      opacity: 0.5;
+      border: 1px solid $place-holder;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 85px;
+      margin-bottom: 110px;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      color: #ffff;
+      font-weight: bold;
+    }
+    .SearchNotFound__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      background-color: transparent;
+      opacity: 0.6px;
+      border-radius: 80px;
+    }
+    p {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 150px;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      font-weight: bold;
+      color: $blue;
+    }
+  }
+}
+//Fin Modo Nocturno
 
 @media screen and (min-width: 1024px) {
   .SearchNotFound {

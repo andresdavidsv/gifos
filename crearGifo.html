@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gifos</title>
+    <link rel="stylesheet" href="./build/stylesheets/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body class="">
+    <header>
+      <div class="headerHome__purple-line"></div>
+      <header class="headerHome">
+        <div class="logoGifos">
+          <a href="./index.html"><img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" id="logoMobile" /></a>
+        </div>
+        <nav class="menu">
+          <div class="itemsDesplegables">
+            <input type="checkbox" class="menuDesplegable" id="menu" />
+            <label for="menu" class="menuLabel">
+              <img src="./assets/burger.svg" alt="logo-mobile" class="menuHamburguesa" >
+              <img src="./assets/close.svg" alt="close" class="cerrar">
+            </label>
+            <div class="items">
+              <li class="linksItems">
+                <button class="linksBoton" id="switch">
+                  Modo Nocturno
+                </button>
+                <div class="divid"></div>
+              </li>
+              <li class="linksItems">
+                <a href="./favoritos.html" class="links"> Favoritos </a>
+                <div class="divid"></div>
+              </li>
+              <li class="linksItems">
+                <a href="./misGifos.html" class="links"> Mis GIFOS </a>
+                <div class="divid"></div>
+              </li>
+            </div>
+        </nav>
+        <div class="contenedorBotonG">
+          <input type="checkbox" class="menuCrearGifos" id="menuG" />
+          <label for="menuG" class="menuLabelG">
+            <div class="contentCrearImgs">
+              <a href="./crearGifo.html" class="linkBotonG"><img src="./assets/CTA-crear-gifo-active.svg" alt="button-crear-gifo" class="crearGifoD"></a>
+            </div>
+          </label>
+        </div>
+      </header>
+    </header>
+
+
+    <main>
+      <section class="containerSliderCG">
+        <div class="containerImg">
+          <div class="containerCamLuz">
+            <img src="./assets/illustration-camara.svg" alt="càmara" class="camara" id="camara">
+            <img src="./assets/illustration-light.svg" alt="luz camara" class="imgLuzC" id="luz">
+          </div>
+          <img src="./assets/illustration-movie.svg" alt="cinta pelicula" class="imgCintaP" id="cinta">
+        </div>
+        <ul class="sliderCG">
+          <li id="sliderIn" class="sliderIni">
+            <div class="containerCam">
+              <h2 class="tituloIn">
+                Aquí podrás  <br> crear tus propios <span class="tituloInColor">GIFOS</span>
+              </h2>
+              <h3 class="descripIn">
+                ¡Crea tu GIFO en sólo 3 pasos!  <br>  (sólo necesitas una cámara para grabar un video)
+              </h3>
+            </div>
+          </li>
+          <li id="sliderAc" class="sliderAcC">
+            <div class="containerCam">
+              <h2 class="tituloAc">
+                ¿Nos das acceso <br>a tu cámara?
+              </h2>
+              <h3 class="descripAc">
+                El acceso a tu camara será válido sólo <br>
+                por el tiempo en el que estés creando el GIFO.
+              </h3>
+            </div>
+          </li>
+
+          <li id="sliderGb" class="sliderGbr">
+            <div class="containerCam">
+              <div class="camGr">
+              </div>
+            </div>
+            <video src="" class="videoIn"> 
+            </video>
+          </li>
+
+          <li id="sliderSG " class="sliderSGifo">
+            <div class="containerCam">
+              <div class="camGr">
+              </div>
+              <video src="" class="videoIn">
+              </video>
+              <div class="containerTextDescrip">
+                <div class="loaderText">
+                  <img src="./assets/loader.svg" alt="loader">
+                  <h3 class="descripSGifo">
+                    Estamos subiendo tu GIFO
+                  </h3>
+                </div>
+                <div class="checkText">
+                  <img src="./assets/check.svg" alt="check">
+                  <h3 class="descripSEGifo">
+                    GIFO subido con éxito
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </li>
+          <ul class="menu__Num">
+            <li >
+              <span class="first__Step">1</span>
+            </li>
+            <li >
+              <span class="Second__Step">2</span>
+            </li>
+            <li >
+              <span class="Third__Step">3</span>
+            </li>
+          </ul>
+        </ul>
+        <div class="containerBComenzar">
+          <button class="BComenzar" id="switchComenzar">
+              COMENZAR
+          </button>
+        </div>
+      </section>
+    </main>
+
+
+    <slider-component>hfghfghfgh</slider-component>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__social-media">
+          <span class="footer__text-share">Compartir en:</span>
+          <div class="footer__icons">
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <span class="footer__text-copyright"
+            >© GIFOS 2020 All Rights Reserved.</span
+          >
+        </div>
+      </div>
+      <div class="footer__purple-line"></div>
+    </footer>
+    <script
+      rel="stylesheet"
+      type="text/javascript"
+      src="./source/scripts/index.js"
+    ></script>
+    <script 
+    rel="stylesheet"
+    type="text/javascript"
+    src="./source/scripts/modeDark.js"
+    ></script>
+    <script 
+    rel="stylesheet"
+    type="text/javascript"
+    src="./source/scripts/crearGifo.js"
+    ></script>
+  </body>
+</html>
