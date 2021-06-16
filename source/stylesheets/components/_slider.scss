@@ -42,26 +42,16 @@
       margin-left: 25px;
 
       position: relative;
-
+      background: $purple;
       .slider__img {
         width: 100%;
         height: 100%;
-
         object-fit: cover;
+        &:hover {
+          opacity: 0.2;
+        }
       }
-      .slider__hover {
-        width: 100%;
-        height: 100%;
 
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        background: $purple;
-        opacity: 0.7;
-
-        display: none;
-      }
       .slider__icons {
         width: 100%;
 
@@ -96,7 +86,7 @@
           &:active {
             opacity: 1;
             .slider__icon--first {
-              background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart-full.svg");
+              background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart-full.svg');
             }
           }
 
@@ -114,15 +104,15 @@
           }
 
           .slider__icon--first {
-            background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart.svg");
+            background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart.svg');
           }
 
           .slider__icon--second {
-            background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-download.svg");
+            background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-download.svg');
           }
 
           .slider__icon--last {
-            background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-max.svg");
+            background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-max.svg');
           }
         }
       }
@@ -140,14 +130,14 @@
           margin-bottom: 5px;
 
           color: $white;
-          font-family: "Roboto", sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 1.5rem;
         }
         .slider__title {
           margin-left: 13px;
 
           color: $white;
-          font-family: "Roboto", sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 1.6rem;
           font-weight: bold;
         }
@@ -203,11 +193,11 @@
         border: 1px solid $purple;
 
         &:hover .arrow-left {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-white.svg");
+          background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-white.svg');
         }
 
         &:hover .arrow-right {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-white.svg");
+          background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-white.svg');
         }
 
         &:hover {
@@ -215,7 +205,7 @@
           border: none;
         }
         .arrow-left {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-purple.svg");
+          background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-purple.svg');
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -223,7 +213,7 @@
           height: 14px;
         }
         .arrow-right {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-purple.svg");
+          background-image: url('https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-purple.svg');
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;

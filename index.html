@@ -12,47 +12,71 @@
     />
   </head>
   <body>
-    <header>
-      <header class="headerHome">
-        <div class="logoGifos">
-          <img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" />
-        </div>
-        <nav class="menu">
-          <div class="itemsDesplegables">
-            <input type="checkbox" class="menuDesplegable" id="menu" />
-            <label for="menu" class="menuLabel">
-              <img src="./assets/burger.svg" alt="logo-mobile" class="menuHamburguesa" >
-              <img src="./assets/close.svg" alt="close" class="cerrar">
-            </label>
-            <div class="items">
-              <a href="#bmn" class="links" id="bmn"> Modo Nocturno </a>
-              <a href="#ActFav" class="links"> Favoritos </a>
-              <a href="#ActMisGifos" class="links"> Mis GIFOS </a>
-            </div>
-        </nav>
-        <div class="contenedorBotonG">
-          <input type="checkbox" class="menuCrearGifos" id="menuG" />
-          <label for="menuG" class="menuLabelG">
-            <div class="contentCrearImgs">
-              <img src="./assets/CTA-crear-gifo-hover.svg" alt="button-crear-gifo" class="crearGifoHD">
-              <img src="./assets/CTA-crear-gifo-active.svg" alt="button-crear-gifo" class="crearGifoAD">
-              <img src="./assets/button-crear-gifo.svg" alt="button-crear-gifo" class="crearGifoD">
-            </div>
-            <div class="buscadorHeader">
-              <form action="search.php" method="get" class="buscador">
-                <div class="contenedorInputBu">
-                  <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
-                </div>            
-                <div class="contenedorSuBu">
-                  <button type="submit" class="buscarLupa">
-                    <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
-                  </button>
-                </div>
-              </form>
-            </div>
+    <header class="headerHome">
+      <div class="logoGifos">
+        <img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" />
+      </div>
+      <nav class="menu">
+        <div class="itemsDesplegables">
+          <input type="checkbox" class="menuDesplegable" id="menu" />
+          <label for="menu" class="menuLabel">
+            <img
+              src="./assets/burger.svg"
+              alt="logo-mobile"
+              class="menuHamburguesa"
+            />
+            <img src="./assets/close.svg" alt="close" class="cerrar" />
           </label>
+          <div class="items">
+            <a href="#bmn" class="links" id="bmn"> Modo Nocturno </a>
+            <a href="#ActFav" class="links"> Favoritos </a>
+            <a href="#ActMisGifos" class="links"> Mis GIFOS </a>
+          </div>
         </div>
-      </header>
+      </nav>
+      <!-- <div class="contenedorBotonG">
+        <input type="checkbox" class="menuCrearGifos" id="menuG" />
+        <label for="menuG" class="menuLabelG">
+          <div class="contentCrearImgs">
+            <img
+              src="./assets/CTA-crear-gifo-hover.svg"
+              alt="button-crear-gifo"
+              class="crearGifoHD"
+            />
+            <img
+              src="./assets/CTA-crear-gifo-active.svg"
+              alt="button-crear-gifo"
+              class="crearGifoAD"
+            />
+            <img
+              src="./assets/button-crear-gifo.svg"
+              alt="button-crear-gifo"
+              class="crearGifoD"
+            />
+          </div>
+          <div class="buscadorHeader">
+            <form action="search.php" method="get" class="buscador">
+              <div class="contenedorInputBu">
+                <input
+                  type="search"
+                  name="q"
+                  placeholder="Busca GIFOS y más"
+                  class="barraBuscar"
+                />
+              </div>
+              <div class="contenedorSuBu">
+                <button type="submit" class="buscarLupa">
+                  <img
+                    src="./assets/icon-search.svg"
+                    alt="icon-search"
+                    class="imgLupa"
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+        </label>
+      </div> -->
     </header>
 
     <main class="inspirate">
@@ -63,30 +87,30 @@
         <img src="./assets/ilustra_header.svg" alt="ilustra_header" class="imgAmigos">
       </section>
 
-      <form action="search.php" method="get" class="buscadorMain">
+      <!-- <div class="buscadorMain">
         <div class="contenedorInputBu">
-          <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
+          <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar" id="searchInput">
         </div>
         <div class="contenedorSuBu">
-          <button type="submit" class="buscarLupa">
+          <button type="submit" class="buscarLupa" id="searchBtn">
             <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
           </button>
         </div>
-      </form>
+      </div> -->
 
-      <section class="pieBuscador">
+      <!-- <section class="pieBuscador">
         <h2 class="titulo">
           Trending:
         </h2>
         <p class="descripcion">
           Reactions, Entertainment, Sports, Stickers, Artists
         </p>
-      </section>
+      </section> -->
 
-      <section id="search">
-      </section>
+      <!-- Busqueda -->
+      <section id="search"></section>
 
-      <section class="SearchNotFound">
+      <!-- <section class="SearchNotFound">
         <div class="SearchNotFound__decoration">
         </div>
         <h2>Lorem Ipsum</h2>
@@ -94,9 +118,9 @@
           <img src="./assets/icon-ouch.svg" alt="Icono busqueda no encontrada">
         </div>
         <p>Intenta con otra búsqueda.</p>
-      </section>
+      </section> -->
 
-      <section class="bFavorit" id="ActFav">
+      <!-- <section class="bFavorit" id="ActFav">
         <div class="headerFav">
           <img src="./assets/icon-favoritos.svg" alt="icon-fav" class="imgIconFav">
           <h2 class="tituloFav">Favoritos</h2>
@@ -106,9 +130,9 @@
           <h2 class="descriptFav">"¡Guarda tu primer GIFO en Favoritos 
             para que se muestre aquí!"</h2>
         </div>
-      </section>
+      </section> -->
 
-      <section class="bMisGifos" id="ActMisGifos">
+      <!-- <section class="bMisGifos" id="ActMisGifos">
         <div class="headerMisG">
           <img src="./assets/icon-mis-gifos.svg" alt="icon-mis-gifos" class="imgIconMisG">
           <h2 class="tituloMisG">Mis GIFOS</h2>
@@ -117,9 +141,9 @@
           <img src="./assets/icon-mis-gifos-sin-contenido.svg" alt="icon-mis-gifos-sin-contenido">
           <h2 class="descriptMisG">"¡Anímate a crear tu primer GIFO!"</h2>
         </div>
-      </section>
+      </section> -->
 
-      <section class="containerSliderCG">
+      <!-- <section class="containerSliderCG">
         <ul class="sliderCG">
           <li id="sliderIn" class="sliderIni">
             <div class="containerCam">
@@ -194,105 +218,51 @@
           </li>
         </ul>
 
-      </section>
+      </section> -->
 
-
-      <section class="slider">
+      <section class="slider" id="slider-img">
         <h2 class="slider__h2">Trending GIFOS</h2>
         <p class="slider__p">Mira los últimos GIFOS de nuestra comunidad.</p>
         <div class="slider__container">
+          <div id="ModalSlider" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="imgModal" />
+            <div id="caption"></div>
+          </div>
 
-        <img id="myImg" src="https://bit.ly/2PkhTNg" alt="Snow" style="width:100%;max-width:300px">
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-
-          <div class="slider__arrow">
+          <div class="slider__arrow" onclick="prev()">
             <span class="arrow-left"></span>
           </div>
 
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="https://bit.ly/2PkhTNg"
-              alt="Imagen de prueba"
-            />
-            <div class="slider__hover"></div>
-            <div class="slider__icons">
-              <div class="slider__icon-container">
-                <span class="slider__icon--first"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--second"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--last"></span>
-              </div>
-            </div>
-            <div class="slider__text">
-              <p class="slider__p">User</p>
-              <p class="slider__title">Título GIFO</p>
-            </div>
-          </div>
+          <label id="slider" class="container"></label>
 
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="https://bit.ly/2PkhTNg"
-              alt="Imagen de prueba"
-            />
-            <div class="slider__hover"></div>
-            <div class="slider__icons">
-              <div class="slider__icon-container">
-                <span class="slider__icon--first"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--second"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--last"></span>
-              </div>
-            </div>
-            <div class="slider__text">
-              <p class="slider__p">User</p>
-              <p class="slider__title">Título GIFO</p>
-            </div>
-          </div>
-
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="https://bit.ly/2PkhTNg"
-              alt="Imagen de prueba"
-            />
-            <div class="slider__hover"></div>
-            <div class="slider__icons">
-              <div class="slider__icon-container">
-                <span class="slider__icon--first"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--second"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--last"></span>
-              </div>
-            </div>
-            <div class="slider__text">
-              <p class="slider__p">User</p>
-              <p class="slider__title">Título GIFO</p>
-            </div>
-          </div>
-
-          <div class="slider__arrow">
+          <div class="slider__arrow" onclick="next()">
             <span class="arrow-right"></span>
           </div>
         </div>
+      </section>
 
+      <section class="carousel">
+        <div class="carousel__container">
+          <div class="carousel-item">
+            <img
+              class="carousel-item__img"
+              src="https://images.pexels.com/photos/7453194/pexels-photo-7453194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="Model"
+            />
+            <div class="carousel-item__details">
+              <div>
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+              <p class="carousel-item__details--title">Titulo Descriptivo</p>
+              <p class="carousel-item__details--subtitle">Name</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <slider-component>hfghfghfgh</slider-component>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__social-media">
@@ -319,6 +289,16 @@
       rel="stylesheet"
       type="text/javascript"
       src="./source/scripts/index.js"
+    ></script>
+    <script
+      rel="stylesheet"
+      type="text/javascript"
+      src="./source/scripts/api/gifosApi.js"
+    ></script>
+    <script
+      rel="stylesheet"
+      type="text/javascript"
+      src="./source/scripts/api/slider.js"
     ></script>
   </body>
 </html>
