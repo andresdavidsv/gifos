@@ -349,6 +349,12 @@ ul, li {
   list-style: none;
 }
 
+.headerHome__purple-line {
+  width: 100%;
+  height: 5px;
+  background-color: #572EE5;
+}
+
 .headerHome {
   display: flex;
   justify-content: space-between;
@@ -359,9 +365,6 @@ ul, li {
 .headerHome .logoGifos .l-gifos {
   width: 48.8px;
   height: 48.8px;
-}
-.headerHome .buscadorHeader {
-  display: none;
 }
 .headerHome .menu .itemsDesplegables .menuDesplegable {
   opacity: 0;
@@ -391,14 +394,33 @@ ul, li {
   filter: alpha(opacity=50);
   z-index: 2;
 }
-.headerHome .items .links {
+.headerHome .items .linksBoton {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px 0px;
+  margin: 0 auto;
+}
+.headerHome .items .linksItems, .headerHome .items .links {
   text-decoration: none;
   display: block;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #ffffff;
   text-align: center;
-  padding: 25px 0px;
+  padding: 15px 0px;
+}
+.headerHome .items .divid {
+  height: 0.1px;
+  max-width: 41px;
+  opacity: 0.5;
+  border-top: 1px solid #FFFFFF;
+  margin: 0 auto;
 }
 .headerHome .contenedorBotonG {
   display: none;
@@ -412,13 +434,91 @@ ul, li {
 .headerHome .menuDesplegable:checked ~ .items {
   display: block;
 }
-.headerHome .menuDesplegable:checked ~ .menuLabel .menuHamburguesa {
+
+body.modoNocturno {
+  background-color: #37383C;
+}
+body.modoNocturno .headerHome__purple-line {
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+}
+body.modoNocturno .headerHome {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding: 34px 22px;
+}
+body.modoNocturno .headerHome .logoGifos .l-gifos {
+  width: 48.8px;
+  height: 48.8px;
+}
+body.modoNocturno .headerHome .menu .itemsDesplegables .menuDesplegable {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+body.modoNocturno .headerHome .menu .itemsDesplegables .menuLabel .menuHamburguesa {
+  margin-top: 15px;
+  width: 15px;
+  height: 14px;
+}
+body.modoNocturno .headerHome .menu .itemsDesplegables .menuLabel .cerrar {
+  margin-top: 15px;
+  width: 14px;
+  height: 14px;
   display: none;
 }
-.headerHome .menuDesplegable:checked ~ .menuLabel .cerrar {
+body.modoNocturno .headerHome .items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  margin-top: 34px;
+  background: #000000;
+  padding: 12px 0px;
+  z-index: 2;
+}
+body.modoNocturno .headerHome .items .linksBoton {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px 0px;
+  margin: 0 auto;
+}
+body.modoNocturno .headerHome .items .linksItems, body.modoNocturno .headerHome .items .links {
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0px;
+}
+body.modoNocturno .headerHome .items .divid {
+  height: 0.1px;
+  max-width: 41px;
+  opacity: 0.5;
+  border-top: 1px solid #FFFFFF;
+  margin: 0 auto;
+}
+body.modoNocturno .headerHome .contenedorBotonG {
+  display: none;
+}
+body.modoNocturno .headerHome .menuDesplegable:checked ~ .menuLabel .menuHamburguesa {
+  display: none;
+}
+body.modoNocturno .headerHome .menuDesplegable:checked ~ .menuLabel .cerrar {
   display: block;
 }
-.headerHome .menuDesplegable:checked ~ .items {
+body.modoNocturno .headerHome .menuDesplegable:checked ~ .items {
   display: block;
 }
 
@@ -446,16 +546,16 @@ ul, li {
     padding: 0px 156px;
     margin-right: 50px;
   }
-  .headerHome .items .links {
+  .headerHome .items .links, .headerHome .items .linksItems, .headerHome .items .linksBoton {
     display: flex;
     font-size: 13px;
     color: #572ee5;
-    padding: 0px 50px;
+    padding: 0px 20px;
   }
-  .headerHome .items .links:hover {
+  .headerHome .items .linksItems:hover {
     text-decoration: underline 2px solid #5ed7c6;
   }
-  .headerHome .items .links:active {
+  .headerHome .items .linksItems:active {
     color: #9cafc3;
   }
   .headerHome .contenedorBotonG {
@@ -469,36 +569,30 @@ ul, li {
   .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG {
     display: flex;
   }
-  .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG .crearGifo {
+  .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG .crearGifoD {
     display: flex;
     margin-top: -20px;
     width: 54px;
     height: 54px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader {
-    position: absolute;
-    display: none;
-    margin-left: -65%;
-    margin-right: 300px;
+
+  body.modoNocturno {
+    background-color: #37383C;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador {
-    padding: 0px 20px;
-    margin-top: -5px;
-    margin-bottom: 31px;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorInputBu .barraBuscar {
-    background: #ffffff;
-    border: 1px solid #572ee5;
-    border-radius: 27px;
-    width: 334px;
-    height: 50px;
-    font-size: 16px;
-    color: #000000;
-    text-align: left;
-    padding-left: 40px;
+  body.modoNocturno .headerHome {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 156px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorInputBu .barraBuscar .items {
+  body.modoNocturno .headerHome .logoGifos .l-gifos {
+    width: 59.1px;
+    height: 59.1px;
+  }
+  body.modoNocturno .headerHome .menu .menuLabel {
+    display: none;
+  }
+  body.modoNocturno .headerHome .items {
     display: flex;
     justify-content: flex-end;
     height: 90px;
@@ -508,105 +602,41 @@ ul, li {
     padding: 0px 156px;
     margin-right: 50px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorInputBu .barraBuscar .items .links {
-    text-transform: uppercase;
+  body.modoNocturno .headerHome .items .links, body.modoNocturno .headerHome .items .linksItems, body.modoNocturno .headerHome .items .linksBoton {
     display: flex;
     font-size: 13px;
-    color: #572ee5;
-    padding: 0px 50px;
+    color: #ffffff;
+    padding: 0px 20px;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorInputBu .barraBuscar .items .links:hover {
+  body.modoNocturno .headerHome .items .linksItems:hover {
     text-decoration: underline 2px solid #5ed7c6;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorInputBu .barraBuscar .contenedorSuBu {
-    position: absolute;
-    margin-top: -35px;
-    margin-left: 300px;
+  body.modoNocturno .headerHome .items .linksItems:active {
+    color: #9cAFC3;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorInputBu .barraBuscar .contenedorSuBu .buscarLupa .imgLupa {
-    width: 20px;
-    height: 20px;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG {
+  body.modoNocturno .headerHome .contenedorBotonG {
     display: flex;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuCrearGifos {
+  body.modoNocturno .headerHome .contenedorBotonG .menuCrearGifos {
     opacity: 0;
     position: absolute;
     visibility: hidden;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG {
+  body.modoNocturno .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG {
     display: flex;
   }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .contentCrearImgs {
+  body.modoNocturno .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG .contentCrearImgs .linkBotonG .crearGifoD {
     display: flex;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoD,
-.headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoHD,
-.headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoAD {
-    position: absolute;
-    display: flex;
-    margin-top: -5px;
+    margin-top: -20px;
     width: 54px;
     height: 54px;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoD:active {
-    display: none;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoD:hover {
-    display: none;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .contentCrearImgs .crearGifoAD:hover {
-    display: none;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .buscadorHeader {
-    position: absolute;
-    display: none;
-    margin-left: -65%;
-    margin-right: 300px;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .buscadorHeader .buscador {
-    padding: 0px 20px;
-    margin-top: -5px;
-    margin-bottom: 31px;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .buscadorHeader .buscador .contenedorInputBu .barraBuscar {
-    background: #ffffff;
-    border: 1px solid #572ee5;
-    border-radius: 27px;
-    width: 334px;
-    height: 50px;
-    font-size: 16px;
-    color: #000000;
-    text-align: left;
-    padding-left: 40px;
-    position: relative;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .buscadorHeader .buscador .contenedorSuBu {
-    position: absolute;
-    margin-top: -35px;
-    margin-left: 300px;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuLabelG .buscadorHeader .buscador .contenedorSuBu .buscarLupa .imgLupa {
-    width: 20px;
-    height: 20px;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuCrearGifos:checked ~ .menuLabelG .crearGifo {
-    display: none;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .buscador .contenedorBotonG .menuCrearGifos:checked ~ .menuLabelG .buscadorHeader {
-    display: block;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .menuCrearGifos:hover ~ .menuLabelG .crearGifoD {
-    display: none;
-  }
-  .headerHome .contenedorBotonG .buscadorHeader .menuCrearGifos:hover ~ .menuLabelG .buscadorHeader {
-    display: block;
+    background: transparent;
   }
 }
 .inspirate .titulo {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   color: #572EE5;
   text-align: center;
   font-weight: bold;
@@ -637,6 +667,7 @@ ul, li {
   border-radius: 27px;
   width: 334px;
   height: 50px;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #000000;
   text-align: left;
@@ -656,36 +687,38 @@ ul, li {
   line-height: 25px;
 }
 .inspirate .pieBuscador .titulo {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #572EE5;
   text-align: center;
   font-weight: bold;
 }
 .inspirate .pieBuscador .descripcion {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #572EE5;
   text-align: center;
   padding: 0px 75px;
   margin-top: -25px;
 }
-.inspirate .bFavorit {
-  display: none;
-}
-.inspirate .bFavorit .headerFav {
+
+.bFavorit .headerFav {
   text-align: center;
   margin-top: 11px;
 }
-.inspirate .bFavorit .headerFav .tituloFav {
+.bFavorit .headerFav .tituloFav {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: #572EE5;
   line-height: 30px;
   font-weight: bold;
 }
-.inspirate .bFavorit .SinContentFav {
+.bFavorit .SinContentFav {
   text-align: center;
   margin-top: 109.3px;
 }
-.inspirate .bFavorit .SinContentFav .descriptFav {
+.bFavorit .SinContentFav .descriptFav {
+  font-family: "Montserrat", sans-serif;
   margin-top: 23.7px;
   margin-bottom: 190px;
   font-size: 22px;
@@ -694,24 +727,149 @@ ul, li {
   line-height: 33px;
   padding: 22px;
 }
-.inspirate .bMisGifos {
-  display: none;
-}
-.inspirate .bMisGifos .headerMisG {
+
+.bMisGifos .headerMisG {
   text-align: center;
   margin-top: 11px;
 }
-.inspirate .bMisGifos .headerMisG .tituloMisG {
+.bMisGifos .headerMisG .tituloMisG {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: #572EE5;
   line-height: 30px;
   font-weight: bold;
 }
-.inspirate .bMisGifos .SinContentMG {
+.bMisGifos .SinContentMG {
   text-align: center;
   margin-top: 109.3px;
 }
-.inspirate .bMisGifos .SinContentMG .descriptMisG {
+.bMisGifos .SinContentMG .descriptMisG {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 23.7px;
+  margin-bottom: 190px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #50E3C2;
+  line-height: 33px;
+  padding: 22px;
+}
+
+body.modoNocturno {
+  background-color: #37383C;
+}
+body.modoNocturno .inspirate .titulo {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 45px;
+  margin-bottom: 31px;
+  min-width: 320px;
+  line-height: 3.3rem;
+}
+body.modoNocturno .inspirate .titulo .purpura {
+  color: #50E3C2;
+}
+body.modoNocturno .inspirate .contenedorImg .imgAmigos {
+  width: 273px;
+  height: 130px;
+  display: block;
+  margin: auto;
+}
+body.modoNocturno .inspirate .buscadorMain {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: -3px;
+  margin-bottom: 31px;
+}
+body.modoNocturno .inspirate .buscadorMain .contenedorInputBu .barraBuscar {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 27px;
+  width: 334px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 50px;
+  position: relative;
+}
+body.modoNocturno .inspirate .buscadorMain .contenedorSuBu {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 280px;
+}
+body.modoNocturno .inspirate .buscadorMain .contenedorSuBu .buscarLupa {
+  background-color: transparent;
+}
+body.modoNocturno .inspirate .buscadorMain .contenedorSuBu .buscarLupa .imgLupa {
+  width: 20px;
+  height: 20px;
+}
+body.modoNocturno .inspirate .pieBuscador {
+  line-height: 25px;
+}
+body.modoNocturno .inspirate .pieBuscador .titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+body.modoNocturno .inspirate .pieBuscador .descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 75px;
+  margin-top: -25px;
+}
+body.modoNocturno .bFavorit .headerFav {
+  text-align: center;
+  margin-top: 11px;
+}
+body.modoNocturno .bFavorit .headerFav .tituloFav {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 30px;
+  font-weight: bold;
+}
+body.modoNocturno .bFavorit .SinContentFav {
+  text-align: center;
+  margin-top: 109.3px;
+}
+body.modoNocturno .bFavorit .SinContentFav .descriptFav {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 23.7px;
+  margin-bottom: 190px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #50E3C2;
+  line-height: 33px;
+  padding: 22px;
+}
+body.modoNocturno .bMisGifos .headerMisG {
+  text-align: center;
+  margin-top: 11px;
+}
+body.modoNocturno .bMisGifos .headerMisG .tituloMisG {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 30px;
+  font-weight: bold;
+}
+body.modoNocturno .bMisGifos .SinContentMG {
+  text-align: center;
+  margin-top: 109.3px;
+}
+body.modoNocturno .bMisGifos .SinContentMG .descriptMisG {
+  font-family: "Montserrat", sans-serif;
   margin-top: 23.7px;
   margin-bottom: 190px;
   font-size: 22px;
@@ -722,59 +880,75 @@ ul, li {
 }
 
 @media (min-width: 1440px) {
-  .inspirate .titulo {
+  body.modoNocturno .inspirate .titulo, body .inspirate .titulo {
     font-size: 35px;
     line-height: 50px;
     padding: 0px 453px;
     margin-bottom: 24px;
     margin-top: 56px;
   }
-  .inspirate .contenedorImg .imgAmigos {
+  body.modoNocturno .inspirate .contenedorImg .imgAmigos, body .inspirate .contenedorImg .imgAmigos {
     width: 399px;
     height: 190px;
   }
-  .inspirate .buscadorMain {
+  body.modoNocturno .inspirate .buscadorMain, body .inspirate .buscadorMain {
     padding: 0px 20px;
     margin-bottom: 73px;
   }
-  .inspirate .buscadorMain .contenedorInputBu .barraBuscar {
+  body.modoNocturno .inspirate .buscadorMain .contenedorInputBu .barraBuscar, body .inspirate .buscadorMain .contenedorInputBu .barraBuscar {
     width: 551px;
     height: 50px;
   }
-  .inspirate .buscadorMain .contenedorSuBu {
+  body.modoNocturno .inspirate .buscadorMain .contenedorSuBu, body .inspirate .buscadorMain .contenedorSuBu {
     margin-left: 500px;
   }
-  .inspirate .pieBuscador .titulo {
+  body.modoNocturno .inspirate .pieBuscador .titulo, body .inspirate .pieBuscador .titulo {
     font-size: 18px;
     line-height: 25px;
   }
-  .inspirate .pieBuscador .descripcion {
+  body.modoNocturno .inspirate .pieBuscador .descripcion, body .inspirate .pieBuscador .descripcion {
     font-size: 16px;
   }
-  .inspirate .bFavorit .headerFav .tituloFav {
+  body.modoNocturno .bFavorit .headerFav .tituloFav, body .bFavorit .headerFav .tituloFav {
     font-size: 25px;
   }
-  .inspirate .bFavorit .SinContentFav .descriptFav {
+  body.modoNocturno .bFavorit .SinContentFav .descriptFav, body .bFavorit .SinContentFav .descriptFav {
     padding: 0px 504.5px;
   }
-  .inspirate .bMisGifos .headerMisG .tituloMisG {
+  body.modoNocturno .bMisGifos .headerMisG .tituloMisG, body .bMisGifos .headerMisG .tituloMisG {
     font-size: 25px;
   }
-  .inspirate .bMisGifos .SinContentMG .descriptMisG {
+  body.modoNocturno .bMisGifos .SinContentMG .descriptMisG, body .bMisGifos .SinContentMG .descriptMisG {
     padding: 0px 532.5px;
   }
 }
 .containerSliderCG {
-  display: none;
+  margin-top: -120px;
+}
+.containerSliderCG .containerImg {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+.containerSliderCG .containerImg .containerCamLuz {
+  padding-right: 600px;
+}
+.containerSliderCG .containerImg .containerCamLuz .camara, .containerSliderCG .containerImg .containerCamLuz .imgLuzC {
+  margin-bottom: -400px;
+}
+.containerSliderCG .containerImg .imgCintaP {
+  margin-bottom: -1050px;
+  padding-left: 20px;
 }
 .containerSliderCG .sliderCG {
   position: relative;
   width: 795px;
   height: 520px;
   border-bottom: 6.9px solid #572EE5;
-  margin: 0px 322.1px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-.containerSliderCG .sliderCG .sliderIni, .containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
+.containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s;
@@ -827,6 +1001,9 @@ ul, li {
   text-align: center;
   line-height: 28px;
 }
+.containerSliderCG .sliderCG .sliderGbr {
+  margin-bottom: -150px;
+}
 .containerSliderCG .sliderCG .sliderGbr .containerCam {
   margin-left: 50px;
   margin-top: 50px;
@@ -835,27 +1012,18 @@ ul, li {
   border: 1px solid #572EE5;
 }
 .containerSliderCG .sliderCG .sliderGbr .containerCam .camGr {
+  position: absolute;
   width: 480px;
   height: 320px;
   background: #572EE5;
   margin: 35px 104px;
+  opacity: 1;
 }
-.containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarI, .containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarF, .containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarSG {
-  width: 127px;
-  height: 50px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #572EE5;
-  letter-spacing: 0;
-  text-align: center;
-  padding: 16px 24px;
-  border: 1px solid #572EE5;
-  border-radius: 25px;
-  margin-left: 45%;
-  margin-top: 90px;
-}
-.containerSliderCG .sliderCG .sliderGbr .containerBs .containerBGrabarF, .containerSliderCG .sliderCG .sliderGbr .containerBs .containerBGrabarSG {
-  display: none;
+.containerSliderCG .sliderCG .sliderGbr .containerCam .videoIn {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
 }
 .containerSliderCG .sliderCG .sliderSGifo .containerCam {
   margin-left: 50px;
@@ -865,39 +1033,40 @@ ul, li {
   border: 1px solid #572EE5;
 }
 .containerSliderCG .sliderCG .sliderSGifo .containerCam .camGr {
+  position: absolute;
   width: 480px;
   height: 320px;
   background: #572EE5;
   opacity: 0.6;
   margin: 35px 104px;
 }
+.containerSliderCG .sliderCG .sliderSGifo .containerCam .videoIn {
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
+}
 .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .loaderText, .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
   font-size: 15px;
   color: #0a0a0a;
   text-align: center;
-  margin-top: -220px;
-}
-.containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  margin: -220px 250px;
   opacity: 0;
 }
-.containerSliderCG ul.sliderCG li:first-child {
+.containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
   opacity: 1;
 }
-.containerSliderCG ul.sliderCG li:target {
-  opacity: 1;
-  z-index: auto;
-}
-.containerSliderCG .menuNum {
+.containerSliderCG .sliderCG .menu__Num {
   position: relative;
   z-index: auto;
   text-align: center;
-  margin-top: -85px;
 }
-.containerSliderCG .menuNum li {
+.containerSliderCG .sliderCG .menu__Num li {
   display: inline-block;
   text-align: center;
 }
-.containerSliderCG .menuNum li a {
+.containerSliderCG .sliderCG .menu__Num li span {
   display: inline-block;
   padding-top: 3px;
   font-size: 18px;
@@ -910,9 +1079,192 @@ ul, li {
   height: 32px;
   margin: 25px;
 }
-.containerSliderCG .menuNum li a:active {
+.containerSliderCG .containerBComenzar .BComenzar {
+  width: 127px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 16px 24px;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  margin-left: 47%;
+  margin-top: 15px;
+}
+
+body.modoNocturno .containerSliderCG {
+  margin-top: -120px;
+}
+body.modoNocturno .containerSliderCG .containerImg {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+body.modoNocturno .containerSliderCG .containerImg .containerCamLuz {
+  padding-right: 600px;
+}
+body.modoNocturno .containerSliderCG .containerImg .containerCamLuz .camara, body.modoNocturno .containerSliderCG .containerImg .containerCamLuz .imgLuzC {
+  margin-bottom: -400px;
+}
+body.modoNocturno .containerSliderCG .containerImg .imgCintaP {
+  margin-bottom: -1050px;
+  padding-left: 20px;
+}
+body.modoNocturno .containerSliderCG .sliderCG {
+  position: relative;
+  width: 795px;
+  height: 520px;
+  border-bottom: 6.9px solid #ffffff;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC, body.modoNocturno .containerSliderCG .sliderCG .sliderGbr, body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloIn, body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloInColor {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #572EE5;
+  line-height: 35px;
+  margin-top: 134px;
+  padding: 0px 70px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloIn .tituloInColor, body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloInColor .tituloInColor {
+  color: #50E3C2;
+  padding: 0;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .descripIn {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 29px;
+  padding: 0px 170px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC .containerCam .tituloAc {
+  font-size: 25px;
+  font-weight: bold;
+  color: #572EE5;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 134px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC .containerCam .descripAc {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 28px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr {
+  margin-bottom: -150px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr .containerCam .camGr {
+  position: absolute;
+  width: 480px;
+  height: 320px;
   background: #572EE5;
-  color: #FFFFFF;
+  margin: 35px 104px;
+  opacity: 1;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr .containerCam .videoIn {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .camGr {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  background: #572EE5;
+  opacity: 0.6;
+  margin: 35px 104px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .videoIn {
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .loaderText, body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  margin: -220px 250px;
+  opacity: 0;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
+  opacity: 1;
+}
+body.modoNocturno .containerSliderCG .sliderCG .menu__Num {
+  position: relative;
+  z-index: auto;
+  text-align: center;
+}
+body.modoNocturno .containerSliderCG .sliderCG .menu__Num li {
+  display: inline-block;
+  text-align: center;
+}
+body.modoNocturno .containerSliderCG .sliderCG .menu__Num li span {
+  display: inline-block;
+  padding-top: 3px;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  margin: 25px;
+}
+body.modoNocturno .containerSliderCG .containerBComenzar .BComenzar {
+  width: 127px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 16px 24px;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  margin-left: 47%;
+  margin-top: 15px;
+  background-color: transparent;
 }
 
 .footer {
@@ -973,6 +1325,66 @@ ul, li {
   width: 100%;
   height: 5px;
   background-color: #572EE5;
+}
+
+body.modoNocturno .footer {
+  padding-top: 47px;
+  width: 100%;
+  height: auto;
+}
+body.modoNocturno .footer__social-media {
+  margin: 0 auto;
+}
+body.modoNocturno .footer__social-media .footer__text-share {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0;
+}
+body.modoNocturno .footer__social-media .footer__icons {
+  margin: 0 auto;
+  margin-bottom: 47.8px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body.modoNocturno .footer__social-media .footer__icons a {
+  margin-right: 19px;
+}
+body.modoNocturno .footer__social-media .footer__icons a:last-child {
+  margin-right: unset;
+}
+body.modoNocturno .footer__social-media .footer__icons a i {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+}
+body.modoNocturno .footer__social-media .footer__icons a i:hover {
+  color: #572EE5;
+}
+body.modoNocturno .footer__copyright {
+  margin-bottom: 23px;
+}
+body.modoNocturno .footer__copyright .footer__text-copyright {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 0;
+}
+body.modoNocturno .footer__purple-line {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1270,6 +1682,53 @@ ul, li {
   border-radius: 80px;
 }
 .SearchNotFound p {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 150px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #50E3C2;
+}
+
+body.modoNocturno {
+  background-color: #37383C;
+}
+body.modoNocturno .SearchNotFound {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body.modoNocturno .SearchNotFound .SearchNotFound__decoration {
+  margin: 0 auto;
+  margin-top: 75px;
+  max-width: 100%;
+  width: 280px;
+  height: 0.1px;
+  opacity: 0.5;
+  border: 1px solid #9CAFC3;
+}
+body.modoNocturno .SearchNotFound h2 {
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 110px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #ffff;
+  font-weight: bold;
+}
+body.modoNocturno .SearchNotFound .SearchNotFound__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: transparent;
+  opacity: 0.6px;
+  border-radius: 80px;
+}
+body.modoNocturno .SearchNotFound p {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 150px;
