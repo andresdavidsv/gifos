@@ -569,7 +569,7 @@ body.modoNocturno .headerHome .menuDesplegable:checked ~ .items {
   .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG {
     display: flex;
   }
-  .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG .crearGifo {
+  .headerHome .contenedorBotonG .menuCrearGifos .menuLabelG .crearGifoD {
     display: flex;
     margin-top: -20px;
     width: 54px;
@@ -880,58 +880,75 @@ body.modoNocturno .bMisGifos .SinContentMG .descriptMisG {
 }
 
 @media (min-width: 1440px) {
-  .inspirate .titulo {
+  body.modoNocturno .inspirate .titulo, body .inspirate .titulo {
     font-size: 35px;
     line-height: 50px;
     padding: 0px 453px;
     margin-bottom: 24px;
     margin-top: 56px;
   }
-  .inspirate .contenedorImg .imgAmigos {
+  body.modoNocturno .inspirate .contenedorImg .imgAmigos, body .inspirate .contenedorImg .imgAmigos {
     width: 399px;
     height: 190px;
   }
-  .inspirate .buscadorMain {
+  body.modoNocturno .inspirate .buscadorMain, body .inspirate .buscadorMain {
     padding: 0px 20px;
     margin-bottom: 73px;
   }
-  .inspirate .buscadorMain .contenedorInputBu .barraBuscar {
+  body.modoNocturno .inspirate .buscadorMain .contenedorInputBu .barraBuscar, body .inspirate .buscadorMain .contenedorInputBu .barraBuscar {
     width: 551px;
     height: 50px;
   }
-  .inspirate .buscadorMain .contenedorSuBu {
+  body.modoNocturno .inspirate .buscadorMain .contenedorSuBu, body .inspirate .buscadorMain .contenedorSuBu {
     margin-left: 500px;
   }
-  .inspirate .pieBuscador .titulo {
+  body.modoNocturno .inspirate .pieBuscador .titulo, body .inspirate .pieBuscador .titulo {
     font-size: 18px;
     line-height: 25px;
   }
-  .inspirate .pieBuscador .descripcion {
+  body.modoNocturno .inspirate .pieBuscador .descripcion, body .inspirate .pieBuscador .descripcion {
     font-size: 16px;
   }
-
-  .bFavorit .headerFav .tituloFav {
+  body.modoNocturno .bFavorit .headerFav .tituloFav, body .bFavorit .headerFav .tituloFav {
     font-size: 25px;
   }
-  .bFavorit .SinContentFav .descriptFav {
+  body.modoNocturno .bFavorit .SinContentFav .descriptFav, body .bFavorit .SinContentFav .descriptFav {
     padding: 0px 504.5px;
   }
-
-  .bMisGifos .headerMisG .tituloMisG {
+  body.modoNocturno .bMisGifos .headerMisG .tituloMisG, body .bMisGifos .headerMisG .tituloMisG {
     font-size: 25px;
   }
-  .bMisGifos .SinContentMG .descriptMisG {
+  body.modoNocturno .bMisGifos .SinContentMG .descriptMisG, body .bMisGifos .SinContentMG .descriptMisG {
     padding: 0px 532.5px;
   }
+}
+.containerSliderCG {
+  margin-top: -120px;
+}
+.containerSliderCG .containerImg {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+.containerSliderCG .containerImg .containerCamLuz {
+  padding-right: 600px;
+}
+.containerSliderCG .containerImg .containerCamLuz .camara, .containerSliderCG .containerImg .containerCamLuz .imgLuzC {
+  margin-bottom: -400px;
+}
+.containerSliderCG .containerImg .imgCintaP {
+  margin-bottom: -1050px;
+  padding-left: 20px;
 }
 .containerSliderCG .sliderCG {
   position: relative;
   width: 795px;
   height: 520px;
   border-bottom: 6.9px solid #572EE5;
-  margin: 0px 322.1px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-.containerSliderCG .sliderCG .sliderIni, .containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
+.containerSliderCG .sliderCG .sliderAcC, .containerSliderCG .sliderCG .sliderGbr, .containerSliderCG .sliderCG .sliderSGifo {
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s;
@@ -984,6 +1001,9 @@ body.modoNocturno .bMisGifos .SinContentMG .descriptMisG {
   text-align: center;
   line-height: 28px;
 }
+.containerSliderCG .sliderCG .sliderGbr {
+  margin-bottom: -150px;
+}
 .containerSliderCG .sliderCG .sliderGbr .containerCam {
   margin-left: 50px;
   margin-top: 50px;
@@ -992,27 +1012,18 @@ body.modoNocturno .bMisGifos .SinContentMG .descriptMisG {
   border: 1px solid #572EE5;
 }
 .containerSliderCG .sliderCG .sliderGbr .containerCam .camGr {
+  position: absolute;
   width: 480px;
   height: 320px;
   background: #572EE5;
   margin: 35px 104px;
+  opacity: 1;
 }
-.containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarI, .containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarF, .containerSliderCG .sliderCG .sliderGbr .containerBs .BGrabarSG {
-  width: 127px;
-  height: 50px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #572EE5;
-  letter-spacing: 0;
-  text-align: center;
-  padding: 16px 24px;
-  border: 1px solid #572EE5;
-  border-radius: 25px;
-  margin-left: 45%;
-  margin-top: 90px;
-}
-.containerSliderCG .sliderCG .sliderGbr .containerBs .containerBGrabarF, .containerSliderCG .sliderCG .sliderGbr .containerBs .containerBGrabarSG {
-  display: none;
+.containerSliderCG .sliderCG .sliderGbr .containerCam .videoIn {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
 }
 .containerSliderCG .sliderCG .sliderSGifo .containerCam {
   margin-left: 50px;
@@ -1022,39 +1033,40 @@ body.modoNocturno .bMisGifos .SinContentMG .descriptMisG {
   border: 1px solid #572EE5;
 }
 .containerSliderCG .sliderCG .sliderSGifo .containerCam .camGr {
+  position: absolute;
   width: 480px;
   height: 320px;
   background: #572EE5;
   opacity: 0.6;
   margin: 35px 104px;
 }
+.containerSliderCG .sliderCG .sliderSGifo .containerCam .videoIn {
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
+}
 .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .loaderText, .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
   font-size: 15px;
   color: #0a0a0a;
   text-align: center;
-  margin-top: -220px;
-}
-.containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  margin: -220px 250px;
   opacity: 0;
 }
-.containerSliderCG ul.sliderCG li:first-child {
+.containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
   opacity: 1;
 }
-.containerSliderCG ul.sliderCG li:target {
-  opacity: 1;
-  z-index: auto;
-}
-.containerSliderCG .menuNum {
+.containerSliderCG .sliderCG .menu__Num {
   position: relative;
   z-index: auto;
   text-align: center;
-  margin-top: -85px;
 }
-.containerSliderCG .menuNum li {
+.containerSliderCG .sliderCG .menu__Num li {
   display: inline-block;
   text-align: center;
 }
-.containerSliderCG .menuNum li a {
+.containerSliderCG .sliderCG .menu__Num li span {
   display: inline-block;
   padding-top: 3px;
   font-size: 18px;
@@ -1067,9 +1079,192 @@ body.modoNocturno .bMisGifos .SinContentMG .descriptMisG {
   height: 32px;
   margin: 25px;
 }
-.containerSliderCG .menuNum li a:active {
+.containerSliderCG .containerBComenzar .BComenzar {
+  width: 127px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 16px 24px;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  margin-left: 47%;
+  margin-top: 15px;
+}
+
+body.modoNocturno .containerSliderCG {
+  margin-top: -120px;
+}
+body.modoNocturno .containerSliderCG .containerImg {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+body.modoNocturno .containerSliderCG .containerImg .containerCamLuz {
+  padding-right: 600px;
+}
+body.modoNocturno .containerSliderCG .containerImg .containerCamLuz .camara, body.modoNocturno .containerSliderCG .containerImg .containerCamLuz .imgLuzC {
+  margin-bottom: -400px;
+}
+body.modoNocturno .containerSliderCG .containerImg .imgCintaP {
+  margin-bottom: -1050px;
+  padding-left: 20px;
+}
+body.modoNocturno .containerSliderCG .sliderCG {
+  position: relative;
+  width: 795px;
+  height: 520px;
+  border-bottom: 6.9px solid #ffffff;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC, body.modoNocturno .containerSliderCG .sliderCG .sliderGbr, body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloIn, body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloInColor {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #572EE5;
+  line-height: 35px;
+  margin-top: 134px;
+  padding: 0px 70px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloIn .tituloInColor, body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .tituloInColor .tituloInColor {
+  color: #50E3C2;
+  padding: 0;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderIni .containerCam .descripIn {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 29px;
+  padding: 0px 170px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC .containerCam .tituloAc {
+  font-size: 25px;
+  font-weight: bold;
+  color: #572EE5;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 134px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderAcC .containerCam .descripAc {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 28px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr {
+  margin-bottom: -150px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr .containerCam .camGr {
+  position: absolute;
+  width: 480px;
+  height: 320px;
   background: #572EE5;
-  color: #FFFFFF;
+  margin: 35px 104px;
+  opacity: 1;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderGbr .containerCam .videoIn {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 688px;
+  height: 390px;
+  border: 1px solid #ffffff;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .camGr {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  background: #572EE5;
+  opacity: 0.6;
+  margin: 35px 104px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .videoIn {
+  width: 480px;
+  height: 320px;
+  margin: 35px 104px;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .loaderText, body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  margin: -220px 250px;
+  opacity: 0;
+}
+body.modoNocturno .containerSliderCG .sliderCG .sliderSGifo .containerCam .containerTextDescrip .checkText {
+  position: absolute;
+  opacity: 1;
+}
+body.modoNocturno .containerSliderCG .sliderCG .menu__Num {
+  position: relative;
+  z-index: auto;
+  text-align: center;
+}
+body.modoNocturno .containerSliderCG .sliderCG .menu__Num li {
+  display: inline-block;
+  text-align: center;
+}
+body.modoNocturno .containerSliderCG .sliderCG .menu__Num li span {
+  display: inline-block;
+  padding-top: 3px;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  margin: 25px;
+}
+body.modoNocturno .containerSliderCG .containerBComenzar .BComenzar {
+  width: 127px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 16px 24px;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  margin-left: 47%;
+  margin-top: 15px;
+  background-color: transparent;
 }
 
 .footer {

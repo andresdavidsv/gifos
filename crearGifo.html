@@ -20,7 +20,7 @@
       <div class="headerHome__purple-line"></div>
       <header class="headerHome">
         <div class="logoGifos">
-          <a href="./index.html"><img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" /></a>
+          <a href="./index.html"><img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" id="logoMobile" /></a>
         </div>
         <nav class="menu">
           <div class="itemsDesplegables">
@@ -57,7 +57,16 @@
       </header>
     </header>
 
+
+    <main>
       <section class="containerSliderCG">
+        <div class="containerImg">
+          <div class="containerCamLuz">
+            <img src="./assets/illustration-camara.svg" alt="càmara" class="camara" id="camara">
+            <img src="./assets/illustration-light.svg" alt="luz camara" class="imgLuzC" id="luz">
+          </div>
+          <img src="./assets/illustration-movie.svg" alt="cinta pelicula" class="imgCintaP" id="cinta">
+        </div>
         <ul class="sliderCG">
           <li id="sliderIn" class="sliderIni">
             <div class="containerCam">
@@ -79,33 +88,23 @@
                 por el tiempo en el que estés creando el GIFO.
               </h3>
             </div>
-            <div class="containerBComenzar">
-                <button class="BComenzar" id="switchComenzar">
-                    COMENZAR
-                </button>
-            </div>
           </li>
+
           <li id="sliderGb" class="sliderGbr">
             <div class="containerCam">
               <div class="camGr">
               </div>
             </div>
-            <div class="containerBs"> 
-              <div class="containerBGrabarI">
-                <button class="BGrabarI">GRABAR</button>
-              </div>
-              <div class="containerBGrabarF">
-                <button class="BGrabarF">FINALIZAR</button>
-              </div>
-              <div class="containerBGrabarSG">
-                <button class="BGrabarSG" id="switchSubir">SUBIR GIFO</button>
-              </div>
-            </div>
+            <video src="" class="videoIn"> 
+            </video>
           </li>
+
           <li id="sliderSG " class="sliderSGifo">
             <div class="containerCam">
               <div class="camGr">
               </div>
+              <video src="" class="videoIn">
+              </video>
               <div class="containerTextDescrip">
                 <div class="loaderText">
                   <img src="./assets/loader.svg" alt="loader">
@@ -120,24 +119,29 @@
                   </h3>
                 </div>
               </div>
-              
             </div>
           </li>
+          <ul class="menu__Num">
+            <li >
+              <span class="first__Step">1</span>
+            </li>
+            <li >
+              <span class="Second__Step">2</span>
+            </li>
+            <li >
+              <span class="Third__Step">3</span>
+            </li>
+          </ul>
         </ul>
-
-        <ul class="menuNum">
-          <li >
-            <a href="#sliderAc">1</a>
-          </li>
-          <li >
-            <a href="#sliderGb">2</a>
-          </li>
-          <li >
-            <a href="#sliderSG">3</a>
-          </li>
-        </ul>
-
+        <div class="containerBComenzar">
+          <button class="BComenzar" id="switchComenzar">
+              COMENZAR
+          </button>
+        </div>
       </section>
+    </main>
+
+
     <slider-component>hfghfghfgh</slider-component>
     <footer class="footer">
       <div class="footer__container">
@@ -170,6 +174,11 @@
     rel="stylesheet"
     type="text/javascript"
     src="./source/scripts/modeDark.js"
+    ></script>
+    <script 
+    rel="stylesheet"
+    type="text/javascript"
+    src="./source/scripts/crearGifo.js"
     ></script>
   </body>
 </html>

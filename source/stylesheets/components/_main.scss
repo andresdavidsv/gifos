@@ -292,67 +292,70 @@ body.modoNocturno{
 
 //Fin Modo Nocturno 
 @media(min-width:1440px){
-    .inspirate{
-        .titulo{
-            font-size: 35px;
-            line-height: 50px;
-            padding: 0px 453px;
-            margin-bottom: 24px;
-            margin-top: 56px;
-        }
-        .contenedorImg{ 
-            .imgAmigos{
-                width: 399px;
-                height: 190px;
+    body.modoNocturno,body{
+        .inspirate{
+            .titulo{
+                font-size: 35px;
+                line-height: 50px;
+                padding: 0px 453px;
+                margin-bottom: 24px;
+                margin-top: 56px;
             }
-        }
-        .buscadorMain{
-            padding: 0px 20px;
-            margin-bottom: 73px;
-            .contenedorInputBu{
-                .barraBuscar{
-                    width: 551px;
-                    height: 50px;
+            .contenedorImg{ 
+                .imgAmigos{
+                    width: 399px;
+                    height: 190px;
                 }
             }
-            .contenedorSuBu{
-                margin-left: 500px;
+            .buscadorMain{
+                padding: 0px 20px;
+                margin-bottom: 73px;
+                .contenedorInputBu{
+                    .barraBuscar{
+                        width: 551px;
+                        height: 50px;
+                    }
+                }
+                .contenedorSuBu{
+                    margin-left: 500px;
+                }
+            }
+            .pieBuscador{
+                .titulo{
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                .descripcion{
+                    font-size: 16px;
+                }
             }
         }
-        .pieBuscador{
-            .titulo{
-                font-size: 18px;
-                line-height: 25px;
+            //_______________________________________
+        .bFavorit{
+            .headerFav{
+                .tituloFav{
+                    font-size: 25px;
+                }
             }
-            .descripcion{
-                font-size: 16px;
-            }
-        }
-    }
-        //_______________________________________
-    .bFavorit{
-        .headerFav{
-            .tituloFav{
-                font-size: 25px;
+            .SinContentFav{
+                .descriptFav{
+                    padding: 0px 504.5px;
+                }
             }
         }
-        .SinContentFav{
-            .descriptFav{
-                padding: 0px 504.5px;
+            //__________________________________________
+        .bMisGifos{
+            .headerMisG{
+                .tituloMisG{
+                    font-size: 25px;
+                }
             }
-        }
-    }
-        //__________________________________________
-    .bMisGifos{
-        .headerMisG{
-            .tituloMisG{
-                font-size: 25px;
-            }
-        }
-        .SinContentMG{
-            .descriptMisG{
-                padding: 0px 532.5px;
+            .SinContentMG{
+                .descriptMisG{
+                    padding: 0px 532.5px;
+                }
             }
         }
     }
 }
+
