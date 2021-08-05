@@ -1,324 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gifos</title>
-    <link rel="stylesheet" href="./build/stylesheets/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    />
-  </head>
-  <body>
-    <header>
-      <header class="headerHome">
-        <div class="logoGifos">
-          <img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" />
-        </div>
-        <nav class="menu">
-          <div class="itemsDesplegables">
-            <input type="checkbox" class="menuDesplegable" id="menu" />
-            <label for="menu" class="menuLabel">
-              <img src="./assets/burger.svg" alt="logo-mobile" class="menuHamburguesa" >
-              <img src="./assets/close.svg" alt="close" class="cerrar">
-            </label>
-            <div class="items">
-              <a href="#bmn" class="links" id="bmn"> Modo Nocturno </a>
-              <a href="#ActFav" class="links"> Favoritos </a>
-              <a href="#ActMisGifos" class="links"> Mis GIFOS </a>
-            </div>
-        </nav>
-        <div class="contenedorBotonG">
-          <input type="checkbox" class="menuCrearGifos" id="menuG" />
-          <label for="menuG" class="menuLabelG">
-            <div class="contentCrearImgs">
-              <img src="./assets/CTA-crear-gifo-hover.svg" alt="button-crear-gifo" class="crearGifoHD">
-              <img src="./assets/CTA-crear-gifo-active.svg" alt="button-crear-gifo" class="crearGifoAD">
-              <img src="./assets/button-crear-gifo.svg" alt="button-crear-gifo" class="crearGifoD">
-            </div>
-            <div class="buscadorHeader">
-              <form action="search.php" method="get" class="buscador">
-                <div class="contenedorInputBu">
-                  <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
-                </div>            
-                <div class="contenedorSuBu">
-                  <button type="submit" class="buscarLupa">
-                    <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
-                  </button>
-                </div>
-              </form>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gifos</title>
+  <link rel="stylesheet" href="./build/stylesheets/index.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="">
+  <header>
+    <div class="headerHome__purple-line"></div>
+    <header class="headerHome">
+      <div class="logoGifos">
+        <a href="./index.html"><img src="./assets/logo-mobile.svg" alt="logo" class="l-gifos" id="logoMobile" /></a>
+      </div>
+      <nav class="menu">
+        <div class="itemsDesplegables">
+          <input type="checkbox" class="menuDesplegable" id="menu" />
+          <label for="menu" class="menuLabel">
+            <img src="./assets/burger.svg" alt="logo-mobile" id="menuHam" class="menuHamburguesa">
+            <img src="./assets/close.svg" alt="close" id="close" class="cerrar">
           </label>
-        </div>
-      </header>
+          <div class="items">
+            <li class="linksItems">
+              <button class="linksBoton" id="switch">
+                Modo Nocturno
+              </button>
+              <div class="divid"></div>
+            </li>
+            <li class="linksItems">
+              <a href="./favoritos.html" class="links"> Favoritos </a>
+              <div class="divid"></div>
+            </li>
+            <li class="linksItems">
+              <a href="./misGifos.html" class="links"> Mis GIFOS </a>
+              <div class="divid"></div>
+            </li>
+          </div>
+      </nav>
+      <div class="contenedorBotonG">
+        <input type="checkbox" class="menuCrearGifos" id="menuG" />
+        <label for="menuG" class="menuLabelG">
+          <div class="contentCrearImgs">
+            <a href="./crearGifo.html" class="linkBotonG"><img src="./assets/button-crear-gifo.svg"
+                alt="button-crear-gifo" class="crearGifoD"></a>
+          </div>
+        </label>
+      </div>
     </header>
+  </header>
 
-    <main class="inspirate">
-      <h1 class="titulo">
-        Inspírate, busca, guarda, y crea los mejores <span class="purpura">GIFOS</span>
-      </h1>
-      <section class="contenedorImg">
-        <img src="./assets/ilustra_header.svg" alt="ilustra_header" class="imgAmigos">
-      </section>
+  <main class="inspirate">
+    <h1 class="titulo">
+      Inspírate, busca, guarda, y crea los mejores <span class="purpura">GIFOS</span>
+    </h1>
+    <section class="contenedorImg">
+      <img src="./assets/ilustra_header.svg" alt="ilustra_header" class="imgAmigos">
+    </section>
 
-      <form action="search.php" method="get" class="buscadorMain">
-        <div class="contenedorInputBu">
-          <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
-        </div>
-        <div class="contenedorSuBu">
-          <button type="submit" class="buscarLupa">
-            <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
-          </button>
-        </div>
-      </form>
+    <form action="search.php" method="get" class="buscadorMain">
+      <div class="contenedorInputBu">
+        <input type="search" name="q" placeholder="Busca GIFOS y más" class="barraBuscar">
+      </div>
+      <div class="contenedorSuBu">
+        <button type="submit" class="buscarLupa">
+          <img src="./assets/icon-search.svg" alt="icon-search" class="imgLupa">
+        </button>
+      </div>
+    </form>
 
-      <section class="pieBuscador">
-        <h2 class="titulo">
-          Trending:
-        </h2>
-        <p class="descripcion">
-          Reactions, Entertainment, Sports, Stickers, Artists
-        </p>
-      </section>
+    <section class="pieBuscador">
+      <h2 class="titulo">
+        Trending:
+      </h2>
+      <p class="descripcion">
+        Reactions, Entertainment, Sports, Stickers, Artists
+      </p>
+    </section>
 
-      <section id="search">
-      </section>
+    <section id="search">
+    </section>
 
-      <section class="SearchNotFound">
-        <div class="SearchNotFound__decoration">
-        </div>
-        <h2>Lorem Ipsum</h2>
-        <div class="SearchNotFound__img">
-          <img src="./assets/icon-ouch.svg" alt="Icono busqueda no encontrada">
-        </div>
-        <p>Intenta con otra búsqueda.</p>
-      </section>
+    <section class="SearchNotFound">
+      <div class="SearchNotFound__decoration">
+      </div>
+      <h2>Lorem Ipsum</h2>
+      <div class="SearchNotFound__img">
+        <img src="./assets/icon-ouch.svg" alt="Icono busqueda no encontrada">
+      </div>
+      <p>Intenta con otra búsqueda.</p>
+    </section>
 
-      <section class="bFavorit" id="ActFav">
-        <div class="headerFav">
-          <img src="./assets/icon-favoritos.svg" alt="icon-fav" class="imgIconFav">
-          <h2 class="tituloFav">Favoritos</h2>
-        </div>
-        <div class="SinContentFav">
-          <img src="./assets/icon-fav-sin-contenido.svg" alt="icon-fav-sin-contenido">
-          <h2 class="descriptFav">"¡Guarda tu primer GIFO en Favoritos 
-            para que se muestre aquí!"</h2>
-        </div>
-      </section>
-
-      <section class="bMisGifos" id="ActMisGifos">
-        <div class="headerMisG">
-          <img src="./assets/icon-mis-gifos.svg" alt="icon-mis-gifos" class="imgIconMisG">
-          <h2 class="tituloMisG">Mis GIFOS</h2>
-        </div>
-        <div class="SinContentMG">
-          <img src="./assets/icon-mis-gifos-sin-contenido.svg" alt="icon-mis-gifos-sin-contenido">
-          <h2 class="descriptMisG">"¡Anímate a crear tu primer GIFO!"</h2>
-        </div>
-      </section>
-
-      <section class="containerSliderCG">
-        <ul class="sliderCG">
-          <li id="sliderIn" class="sliderIni">
-            <div class="containerCam">
-              <h2 class="tituloIn">
-                Aquí podrás  <br> crear tus propios <span class="tituloInColor">GIFOS</span>
-              </h2>
-              <h3 class="descripIn">
-                ¡Crea tu GIFO en sólo 3 pasos!  <br>  (sólo necesitas una cámara para grabar un video)
-              </h3>
-            </div>
-          </li>
-          <li id="sliderAc" class="sliderAcC">
-            <div class="containerCam">
-              <h2 class="tituloAc">
-                ¿Nos das acceso <br>a tu cámara?
-              </h2>
-              <h3 class="descripAc">
-                El acceso a tu camara será válido sólo <br>
-                por el tiempo en el que estés creando el GIFO.
-              </h3>
-            </div>
-          </li>
-          <li id="sliderGb" class="sliderGbr">
-            <div class="containerCam">
-              <div class="camGr">
-              </div>
-            </div>
-            <div class="containerBs"> 
-              <div class="containerBGrabarI">
-                <button class="BGrabarI">GRABAR</button>
-              </div>
-              <div class="containerBGrabarF">
-                <button class="BGrabarF">FINALIZAR</button>
-              </div>
-              <div class="containerBGrabarSG">
-                <button class="BGrabarSG">SUBIR GIFO</button>
-              </div>
-            </div>
-          </li>
-          <li id="sliderSG " class="sliderSGifo">
-            <div class="containerCam">
-              <div class="camGr">
-              </div>
-              <div class="containerTextDescrip">
-                <div class="loaderText">
-                  <img src="./assets/loader.svg" alt="loader">
-                  <h3 class="descripSGifo">
-                    Estamos subiendo tu GIFO
-                  </h3>
-                </div>
-                <div class="checkText">
-                  <img src="./assets/check.svg" alt="check">
-                  <h3 class="descripSEGifo">
-                    GIFO subido con éxito
-                  </h3>
-                </div>
-              </div>
-              
-            </div>
-          </li>
-        </ul>
-
-        <ul class="menuNum">
-          <li >
-            <a href="#sliderAc">1</a>
-          </li>
-          <li >
-            <a href="#sliderGb">2</a>
-          </li>
-          <li >
-            <a href="#sliderSG">3</a>
-          </li>
-        </ul>
-
-      </section>
-
-
-      <section class="slider">
-        <h2 class="slider__h2">Trending GIFOS</h2>
-        <p class="slider__p">Mira los últimos GIFOS de nuestra comunidad.</p>
-        <div class="slider__container">
+    <!-- <section class="slider">
+      <h2 class="slider__h2">Trending GIFOS</h2>
+      <p class="slider__p">Mira los últimos GIFOS de nuestra comunidad.</p>
+      <div class="slider__container">
 
         <img id="myImg" src="https://bit.ly/2PkhTNg" alt="Snow" style="width:100%;max-width:300px">
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
 
-          <div class="slider__arrow">
-            <span class="arrow-left"></span>
-          </div>
+        <div class="slider__arrow">
+          <span class="arrow-left"></span>
+        </div>
 
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="https://bit.ly/2PkhTNg"
-              alt="Imagen de prueba"
-            />
-            <div class="slider__hover"></div>
-            <div class="slider__icons">
-              <div class="slider__icon-container">
-                <span class="slider__icon--first"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--second"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--last"></span>
-              </div>
+        <div class="slider__item">
+          <img class="slider__img" src="https://bit.ly/2PkhTNg" alt="Imagen de prueba" />
+          <div class="slider__hover"></div>
+          <div class="slider__icons">
+            <div class="slider__icon-container">
+              <span class="slider__icon--heart"></span>
             </div>
-            <div class="slider__text">
-              <p class="slider__p">User</p>
-              <p class="slider__title">Título GIFO</p>
+            <div class="slider__icon-container">
+              <span class="slider__icon--download"></span>
+            </div>
+            <div class="slider__icon-container">
+              <span class="slider__icon--last"></span>
             </div>
           </div>
-
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="https://bit.ly/2PkhTNg"
-              alt="Imagen de prueba"
-            />
-            <div class="slider__hover"></div>
-            <div class="slider__icons">
-              <div class="slider__icon-container">
-                <span class="slider__icon--first"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--second"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--last"></span>
-              </div>
-            </div>
-            <div class="slider__text">
-              <p class="slider__p">User</p>
-              <p class="slider__title">Título GIFO</p>
-            </div>
-          </div>
-
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="https://bit.ly/2PkhTNg"
-              alt="Imagen de prueba"
-            />
-            <div class="slider__hover"></div>
-            <div class="slider__icons">
-              <div class="slider__icon-container">
-                <span class="slider__icon--first"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--second"></span>
-              </div>
-              <div class="slider__icon-container">
-                <span class="slider__icon--last"></span>
-              </div>
-            </div>
-            <div class="slider__text">
-              <p class="slider__p">User</p>
-              <p class="slider__title">Título GIFO</p>
-            </div>
-          </div>
-
-          <div class="slider__arrow">
-            <span class="arrow-right"></span>
+          <div class="slider__text">
+            <p class="slider__p">User</p>
+            <p class="slider__title">Título GIFO</p>
           </div>
         </div>
 
-      </section>
-    </main>
-    <slider-component>hfghfghfgh</slider-component>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__social-media">
-          <span class="footer__text-share">Compartir en:</span>
-          <div class="footer__icons">
-            <a href="https://www.facebook.com/"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/"
-              ><i class="fab fa-instagram"></i
-            ></a>
+        <div class="slider__item">
+          <img class="slider__img" src="https://bit.ly/2PkhTNg" alt="Imagen de prueba" />
+          <div class="slider__hover"></div>
+          <div class="slider__icons">
+            <div class="slider__icon-container">
+              <span class="slider__icon--heart"></span>
+            </div>
+            <div class="slider__icon-container">
+              <span class="slider__icon--download"></span>
+            </div>
+            <div class="slider__icon-container">
+              <span class="slider__icon--last"></span>
+            </div>
+          </div>
+          <div class="slider__text">
+            <p class="slider__p">User</p>
+            <p class="slider__title">Título GIFO</p>
           </div>
         </div>
-        <div class="footer__copyright">
-          <span class="footer__text-copyright"
-            >© GIFOS 2020 All Rights Reserved.</span
-          >
+
+        <div class="slider__item">
+          <img class="slider__img" src="https://bit.ly/2PkhTNg" alt="Imagen de prueba" />
+          <div class="slider__hover"></div>
+          <div class="slider__icons">
+            <div class="slider__icon-container">
+              <span class="slider__icon--heart"></span>
+            </div>
+            <div class="slider__icon-container">
+              <span class="slider__icon--download"></span>
+            </div>
+            <div class="slider__icon-container">
+              <span class="slider__icon--last"></span>
+            </div>
+          </div>
+          <div class="slider__text">
+            <p class="slider__p">User</p>
+            <p class="slider__title">Título GIFO</p>
+          </div>
+        </div>
+
+        <div class="slider__arrow">
+          <span class="arrow-right"></span>
         </div>
       </div>
-      <div class="footer__purple-line"></div>
-    </footer>
-    <script
-      rel="stylesheet"
-      type="text/javascript"
-      src="./source/scripts/index.js"
-    ></script>
-  </body>
+
+    </section> -->
+
+    <section class="slider">
+      <h2 class="slider__h2">Trending GIFOS</h2>
+      <p class="slider__p">Mira los últimos GIFOS de nuestra comunidad.</p>
+      <div class="slider__container">
+        <div class="slider__arrow">
+          <span class="arrow-left"></span>
+        </div>
+        <div class="slider__arrow">
+          <span class="arrow-right"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__social-media">
+        <span class="footer__text-share">Compartir en:</span>
+        <div class="footer__icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <span class="footer__text-copyright">© GIFOS 2020 All Rights Reserved.</span>
+      </div>
+    </div>
+    <div class="footer__purple-line"></div>
+  </footer>
+  <script rel="stylesheet" type="text/javascript" src="./source/scripts/index.js"></script>
+  <script rel="stylesheet" type="text/javascript" src="./source/scripts/modeDark.js"></script>
+  <script rel="stylesheet" type="text/javascript" src="./source/scripts/trending.js"></script>
+</body>
+
 </html>
