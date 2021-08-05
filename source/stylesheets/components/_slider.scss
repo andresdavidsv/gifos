@@ -95,14 +95,14 @@
 
           &:active {
             opacity: 1;
-            .slider__icon--first {
-              background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart-full.svg");
+            .slider__icon--heart {
+              background: url("../../../assets/icon-heart-full.svg");
             }
           }
 
-          .slider__icon--first,
-          .slider__icon--second,
-          .slider__icon--last {
+          .slider__icon--heart,
+          .slider__icon--download,
+          .slider__icon--max{
             width: 18px;
             height: 15.9px;
 
@@ -113,16 +113,16 @@
             background-size: cover;
           }
 
-          .slider__icon--first {
-            background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart.svg");
+          .slider__icon--heart {
+            background: url("../../../assets/icon-heart.svg");
           }
 
-          .slider__icon--second {
-            background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-download.svg");
+          .slider__icon--download {
+            background: url("../../../assets/icon-download.svg");
           }
 
-          .slider__icon--last {
-            background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-max.svg");
+          .slider__icon--max{
+            background: url("../../../assets/icon-max.svg");
           }
         }
       }
@@ -170,10 +170,6 @@
   }
 }
 
-body.modoNocturno{
-  
-}
-
 @media screen and (min-width: 1024px) {
   .slider {
     padding-bottom: 182px;
@@ -192,11 +188,21 @@ body.modoNocturno{
     }
     .slider__container {
       width: 90%;
-      display: flex;
+      // display: flex;
 
-      justify-content: space-evenly;
-      align-items: center;
-      overflow: hidden;
+      // justify-content: space-evenly;
+      // align-items: center;
+      // overflow: hidden;
+
+      .slider__item {
+        width: 357px;
+        height: 275px;
+        margin-right: 27px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
       .slider__arrow {
         display: flex;
         justify-content: center;
@@ -206,12 +212,26 @@ body.modoNocturno{
         background-color: $white;
         border: 1px solid $purple;
 
+        &:first-child{
+          position: absolute;
+          z-index: 999;
+          top: calc(50% - 20px);
+          left: 40px;
+          }
+  
+          &:nth-child(2){
+            position: absolute;
+            z-index: 999;
+            top: calc(50% - 20px);
+            right: 40px;
+          }
+
         &:hover .arrow-left {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-white.svg");
+          background: url("../../../assets/icon-left-white.svg") !important;
         }
 
         &:hover .arrow-right {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-white.svg");
+          background: url("../../../assets/icon-right-white.svg") !important;
         }
 
         &:hover {
@@ -219,18 +239,12 @@ body.modoNocturno{
           border: none;
         }
         .arrow-left {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-purple.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
+          background: url("../../../assets/icon-left-purple.svg") no-repeat center cover;
           width: 8px;
           height: 14px;
         }
         .arrow-right {
-          background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-purple.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
+          background: url("../../../assets/icon-right-purple.svg") no-repeat center cover;
           width: 8px;
           height: 14px;
         }
