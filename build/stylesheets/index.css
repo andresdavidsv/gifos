@@ -1503,12 +1503,12 @@ body.modoNocturno .footer__purple-line {
 .slider .slider__container .slider__item .slider__icons .slider__icon-container:active {
   opacity: 1;
 }
-.slider .slider__container .slider__item .slider__icons .slider__icon-container:active .slider__icon--first {
-  background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart-full.svg");
+.slider .slider__container .slider__item .slider__icons .slider__icon-container:active .slider__icon--heart {
+  background: url("../../../assets/icon-heart-full.svg");
 }
-.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--first,
-.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--second,
-.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--last {
+.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--heart,
+.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--download,
+.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--max {
   width: 18px;
   height: 15.9px;
   display: block;
@@ -1516,14 +1516,14 @@ body.modoNocturno .footer__purple-line {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--first {
-  background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-heart.svg");
+.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--heart {
+  background: url(../../../assets/icon-heart.svg);
 }
-.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--second {
-  background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-download.svg");
+.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--download {
+  background: url("../../../assets/icon-download.svg");
 }
-.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--last {
-  background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/13964bfe2de43b5efc79bb3e6e83bb3ff3b0f619/src/assets/icon-max.svg");
+.slider .slider__container .slider__item .slider__icons .slider__icon-container .slider__icon--max {
+  background: url("../../../assets/icon-max.svg");
 }
 .slider .slider__container .slider__item .slider__text {
   width: 100%;
@@ -1575,10 +1575,14 @@ body.modoNocturno .footer__purple-line {
   }
   .slider .slider__container {
     width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
+  }
+  .slider .slider__container .slider__item {
+    width: 357px;
+    height: 275px;
+    margin-right: 27px;
+  }
+  .slider .slider__container .slider__item:first-child {
+    margin-left: 0;
   }
   .slider .slider__container .slider__arrow {
     display: flex;
@@ -1589,29 +1593,35 @@ body.modoNocturno .footer__purple-line {
     background-color: #FFF;
     border: 1px solid #572EE5;
   }
+  .slider .slider__container .slider__arrow:first-child {
+    position: absolute;
+    z-index: 999;
+    top: calc(50% - 20px);
+    left: 40px;
+  }
+  .slider .slider__container .slider__arrow:nth-child(2) {
+    position: absolute;
+    z-index: 999;
+    top: calc(50% - 20px);
+    right: 40px;
+  }
   .slider .slider__container .slider__arrow:hover .arrow-left {
-    background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-white.svg");
+    background: url("../../../assets/icon-left-white.svg") !important;
   }
   .slider .slider__container .slider__arrow:hover .arrow-right {
-    background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-white.svg");
+    background: url("../../../assets/icon-right-white.svg") !important;
   }
   .slider .slider__container .slider__arrow:hover {
     background-color: #572EE5;
     border: none;
   }
   .slider .slider__container .slider__arrow .arrow-left {
-    background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-left-purple.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url("../../../assets/icon-left-purple.svg") no-repeat center cover;
     width: 8px;
     height: 14px;
   }
   .slider .slider__container .slider__arrow .arrow-right {
-    background-image: url("https://raw.githubusercontent.com/llandkoer/proyectoGifOS/22982f93488939531983f4b1d58df2d89c711825/src/assets/icon-right-purple.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url("../../../assets/icon-right-purple.svg") no-repeat center cover;
     width: 8px;
     height: 14px;
   }
