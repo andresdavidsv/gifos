@@ -37,7 +37,6 @@ night_mode.addEventListener("click", () => {
     btn_arrow[1].src = "./assets/button-slider-right.svg";
     btn_arrow_hover[1].src = "./assets/button-slider-right-hover.svg";
     search_icon[0].src = "./assets/icon-search.svg";
-
     close_suggest_icon.src = "./assets/close.svg";
     small_camara_tape_img.src = "./assets/element_cinta1.svg";
     big_camara_tape_img.src = "./assets/element_cinta2.svg";
