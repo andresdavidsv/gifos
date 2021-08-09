@@ -1,49 +1,45 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-//API
-
-fetch("https://pokeapi.co/api/v2/pokemon")
-  .then((response) => response.json())
-  .then((json) => {
-    printPokemons(json.results);
-  });
-
-function printPokemons(pokemons) {
-  console.log(pokemons);
-  const search = document.getElementById("search");
-  pokemons.forEach((pokemon) => {
-    search.innerHTML = `
-    ${search.innerHTML}
-    <div class="card">
-      <img src="https://pokeres.bastionbot.org/images/pokemon/${getPokemonId(
-        pokemon.url
-      )}.png"/>
-      <span>N°.${getPokemonId(pokemon.url)}</span>
-      <h2>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2>
-    </div>
-    `;
-  });
+burger_menu.addEventListener("click", scroll_body);
+function scroll_body() {
+  let body_element = document.getElementsByTagName("body");
+  if (body_element[0].style.overflow == "hidden") {
+    body_element[0].style.overflow = "visible";
+  } else {
+    body_element[0].style.overflow = "hidden";
+  }
 }
 
-function getPokemonId(url) {
-  return url.replace("https://pokeapi.co/api/v2/pokemon/", "").replace("/", "");
-}
+let logo_gifs = document.getElementById("logo-gifs");
+logo_gifs.addEventListener("click", () => {
+  favorite_gifs_section.style.display = "none";
+  my_gifs_section.style.display = "none";
+  create_gifs_section.style.display = "none";
+  trending_gifs_section.style.display = "block";
+  search_gifs_contain.style.display = "block";
+})
+
+btn_fav_menu.addEventListener("click", () => {
+  search_gifs_contain.style.display = "none";
+  my_gifs_section.style.display = "none";
+  create_gifs_section.style.display = "none";
+  trending_gifs_section.style.display = "block";
+  favorite_gifs_section.style.display = "block"
+  delete_gifo_card_favorite();
+  add_fav_gifo_cards();
+});
+btn_my_gifo_menu.addEventListener("click", () => {
+  search_gifs_contain.style.display = "none";
+  create_gifs_section.style.display = "none";
+  favorite_gifs_section.style.display = "none"
+  my_gifs_section.style.display = "block";
+  trending_gifs_section.style.display = "block";
+  delete_gifo_card_migifs();
+  add_my_gifo_cards();
+
+});
+btn_new_gifo_menu.addEventListener("click", () => {
+  search_gifs_contain.style.display = "none";
+  favorite_gifs_section.style.display = "none";
+  my_gifs_section.style.display = "none";
+  trending_gifs_section.style.display = "none";
+  create_gifs_section.style.display = "flex";
+});

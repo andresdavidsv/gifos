@@ -223,7 +223,7 @@ body.modoNocturno{
       padding: 0px 156px;
       margin-right: 50px;
       .links, .linksItems,.linksBoton{
-        //font-family: Montserrat-Bold;
+        //font-family: $font-family-sans-serif;
         display: flex;
         font-size: 13px;
         color: #572ee5;
@@ -283,7 +283,7 @@ body.modoNocturno{
         padding: 0px 156px;
         margin-right: 50px;
         .links, .linksItems,.linksBoton{
-          //font-family: Montserrat-Bold;
+          //font-family: $font-family-sans-serif;
           display: flex;
           font-size: 13px;
           color: #ffffff;
